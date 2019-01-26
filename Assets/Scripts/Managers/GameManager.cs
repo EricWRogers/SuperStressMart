@@ -9,17 +9,36 @@ public class GameManager : MonoBehaviour
     public GameObject[] CheckStand;
     public GameObject enter;
     public GameObject exit;
+
+    public GameObject AI;
+
+    public float maxAI = 10f;
+    public float AICount= 0f;
     // Start is called before the first frame update
-    void Awake(){
+    void Awake()
+    {
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoint");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
         CheckStand = GameObject.FindGameObjectsWithTag("CheckStand");
         enter = GameObject.FindGameObjectWithTag("Enter Door");
         exit = GameObject.FindGameObjectWithTag("Exit Door");
     }
-    void Update(){}
+    void Update()
+    {
+
+    }
     void FixedUpdate()
     {
+        if(AICount == maxAI)
+        {
+            maxAI = Random.Range(10,14);
+            
+        } else if(AICount < maxAI)
+        {
+            Instantiate(AI,enter.transform);
+
+        }
+
         PollAgression();
     }
     private void PollAgression()

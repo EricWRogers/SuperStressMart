@@ -19,7 +19,8 @@ public class CustomerController : MonoBehaviour
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)].transform;
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
-        MaxNumberOfIdems = Random.Range(1,6);
+        MaxNumberOfIdems = Random.Range(1,4);
+        GameManager.AICount++;
     }
 
     void FixedUpdate()
@@ -29,8 +30,6 @@ public class CustomerController : MonoBehaviour
             agent.SetDestination(point.position);
 
             float distance = Vector3.Distance(point.transform.position, transform.position);
-
-            
 
             if(distance <= lookRadius)
             {
@@ -63,6 +62,7 @@ public class CustomerController : MonoBehaviour
             if(distance <= lookRadius)
             {
                 Destroy(gameObject);
+                GameManager.AICount--;
             }
        }
     }
