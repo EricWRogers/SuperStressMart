@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - WayPoint
+  - CheckStand
+  - Enter Door
+  - Exit Door
   layers:
   - Default
   - TransparentFX

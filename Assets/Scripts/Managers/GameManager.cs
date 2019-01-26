@@ -6,10 +6,16 @@ public class GameManager : MonoBehaviour
 {
     public GameObject PlayerGO;
     public GameObject[] RoomGOS;
+    public GameObject[] CheckStand;
+    public GameObject enter;
+    public GameObject exit;
     // Start is called before the first frame update
     void Awake(){
         RoomGOS = GameObject.FindGameObjectsWithTag("WayPoint");
         PlayerGO = GameObject.FindGameObjectWithTag("Player");
+        CheckStand = GameObject.FindGameObjectsWithTag("CheckStand");
+        enter = GameObject.FindGameObjectWithTag("Enter Door");
+        exit = GameObject.FindGameObjectWithTag("Exit Door");
     }
     void Update(){}
     void FixedUpdate()
