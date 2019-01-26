@@ -18,7 +18,10 @@ public class UI : MonoBehaviour
     public GameObject hud;
     public Image stressMeter;
     public GameObject shoppingListObject;
+    public Toggle[] toggles;
+    public Text[] texts;
     private int open = 0;
+
 
     void Start()
     {
@@ -82,5 +85,16 @@ public class UI : MonoBehaviour
     {
         startMenu.SetActive(true);
         creditsMenu.SetActive(false);
+    }
+    public void CheckedIfPickedUp(string itemName)
+    {
+        for (int i = 0; i < toggles.Length; i++)
+        {
+            if (texts[i].text == itemName)
+            {
+                toggles[i].isOn = !toggles[i].isOn;
+            }
+        }
+
     }
 }

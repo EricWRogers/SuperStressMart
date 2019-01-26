@@ -19,5 +19,10 @@ public class UiEditor : Editor
         {
             ui.AddStressBar(0.3f);
         }
+        if (GUILayout.Button("search"))
+        {
+            ui.CheckedIfPickedUp("Items");
+        }
+
     }
 }
