@@ -43,5 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5ccd66f3125464d9ff7297dcd5478a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startMenu: {fileID: 0}
+  optionsMenu: {fileID: 0}
+  creditsMenu: {fileID: 0}
+  hud: {fileID: 0}
   stressMeter: {fileID: 0}
   shoppingListObject: {fileID: 0}
