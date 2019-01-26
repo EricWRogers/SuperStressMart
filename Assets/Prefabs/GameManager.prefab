@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5591114129831166429}
   - component: {fileID: 3715064232501083512}
+  - component: {fileID: 6484079763513684691}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -45,3 +46,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerGO: {fileID: 0}
   RoomGOS: []
+  CheckStand: []
+  enter: {fileID: 0}
+  exit: {fileID: 0}
+  AI: {fileID: 0}
+  maxAI: 10
+  AICount: 0
+--- !u!114 &6484079763513684691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311883063038671607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66585094bfaad4d629c00dc9897ee01b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
