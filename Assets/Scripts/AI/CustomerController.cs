@@ -12,7 +12,7 @@ public class CustomerController : MonoBehaviour
     GameManager GameManager;
     bool end = false;
     private bool wait = false;
-    Transform point;
+    GameObject point;
     Animator anim;
 
     UnityEngine.AI.NavMeshAgent agent;
@@ -20,33 +20,38 @@ public class CustomerController : MonoBehaviour
     void Start()
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
-        point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)].transform;
         anim = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+
         MaxNumberOfIdems = Random.Range(1,4);
-        GameManager.AICount++;
         targetTime = Random.Range(3,5);
+        point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
+
         anim.SetBool("Walking", true);
+
+        GameManager.AICount++;
     }
 
     void FixedUpdate()
     {
         if(numberOfIdems < MaxNumberOfIdems)
         {
-            agent.SetDestination(point.position);
+            agent.SetDestination(point.transform.position);
 
             float distance = Vector3.Distance(point.transform.position, transform.position);
 
             if(distance <= lookRadius)
             {
                 anim.SetBool("Walking", false);
+                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + point.GetComponent<WayPointManager>().turn, transform.rotation.eulerAngles.z);
+                anim.SetBool("Swipe", true);
                 waitTimer();
 
-                if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && wait)
+                if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Swipe") && wait)
                 {
+                    anim.SetBool("Swipe", false);
                     anim.SetBool("Walking", true);
-                    point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)].transform;
-                    agent.SetDestination(point.position);
+                    point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
                     numberOfIdems++;
                     wait = false;
                 }
@@ -87,18 +92,18 @@ public class CustomerController : MonoBehaviour
         {
             WayPointManager RoomManager = waypoint.GetComponent<WayPointManager>();
 
-            if ( RoomManager.RoomName == "Checkout 1")
+            if (RoomManager.RoomName == "Checkout 1")
             {   
-               point = waypoint.transform;
+               point = waypoint;
             }
         }
     }
     
     void FaceTarget()
     {
-        Vector3 distance = (point.position - transform.position).normalized;
+        Vector3 distance = (point.transform.position - transform.position).normalized;
         Quaternion lookRatation = Quaternion.LookRotation(new Vector3(distance.x, 0, distance.z));
-        transform.rotation = Quaternion.Slerp(point.rotation, lookRatation, Time.deltaTime * 5f);
+        transform.rotation = Quaternion.Slerp(point.transform.rotation, lookRatation, Time.deltaTime * 5f);
     }
 
     void OnDrawGizmosSelected()
