@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
-
+#if UNITY_EDITOR
 [CustomEditor(typeof(UI))]
 public class UiEditor : Editor
 {
@@ -26,3 +26,4 @@ public class UiEditor : Editor
 
     }
 }
+#endif 

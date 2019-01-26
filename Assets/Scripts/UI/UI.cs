@@ -29,6 +29,11 @@ public class UI : MonoBehaviour
         optionsMenu.SetActive(false);
         creditsMenu.SetActive(false);
         hud.SetActive(false);
+        stressMeter.fillAmount = 0f;
+        for(int i=0; i<toggles.Length; i++)
+        {
+            toggles[i].isOn = !toggles[i].isOn;
+        }
     }
 
     void Update()
