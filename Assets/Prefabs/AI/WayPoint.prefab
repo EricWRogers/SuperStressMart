@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4645439939541599559}
   - component: {fileID: 5372740527215616126}
   m_Layer: 0
-  m_Name: WavePoint
-  m_TagString: WavePoint
+  m_Name: WayPoint
+  m_TagString: WayPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
