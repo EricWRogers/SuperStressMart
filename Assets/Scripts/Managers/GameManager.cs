@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject enter;
     public GameObject exit;
 
-    public GameObject AI;
+    public GameObject Coustomer;
 
     public float maxAI = 10f;
     public float AICount= 0f;
@@ -35,22 +35,7 @@ public class GameManager : MonoBehaviour
             
         } else if(AICount < maxAI)
         {
-            Instantiate(AI,enter.transform);
-
-        }
-
-        PollAgression();
-    }
-    private void PollAgression()
-    {
-        foreach(GameObject waypoint in RoomGOS)
-        {
-            //if ( Vector3.Distance(waypoint.transform.position, PlayerGO.transform.position) < 10.0f )
-            {
-                //WavePointManager RoomManager = waypoint.GetComponent<WavePointManager>();
-                //RoomManager.agressionMeter =  RoomManager.agressionMeter + 0.1f;
-                //if( RoomManager.agressionMeter > 100.0f) { RoomManager.agressionMeter = 100.0f; }
-            }
+            //Instantiate(Coustomer,enter.transform);
         }
     }
 }
