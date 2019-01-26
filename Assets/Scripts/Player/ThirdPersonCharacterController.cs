@@ -14,11 +14,12 @@ public class ThirdPersonCharacterController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        PlayerMovement();
     }
 
     void PlayerMovement()
     {
+        Debug.Log("Hor: " + Input.GetAxis("Horizontal") + " Ver: " + Input.GetAxis("Vertical"));
         transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0.0f,Input.GetAxis("Vertical")) * Speed * Time.deltaTime, Space.Self);
     }
 }
