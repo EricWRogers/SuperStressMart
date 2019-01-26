@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 121de84457e784f7fb31704d4d3681b1
+guid: 7d66036fcc4f042519fa9a8f9b8b3cbd
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: EmilyGroup
+    100000: //RootNode
     100002: EmilyHaed
     100004: EmilyHair
     100006: EmilyLefteye
@@ -14,10 +14,7 @@ ModelImporter:
     100016: EmilyRightFoot
     100018: EmilyRightHand
     100020: emilyTorso
-    100022: //RootNode
-    100024: ffd1Base
-    100026: ffd1Lattice
-    400000: EmilyGroup
+    400000: //RootNode
     400002: EmilyHaed
     400004: EmilyHair
     400006: EmilyLefteye
@@ -28,9 +25,6 @@ ModelImporter:
     400016: EmilyRightFoot
     400018: EmilyRightHand
     400020: emilyTorso
-    400022: //RootNode
-    400024: ffd1Base
-    400026: ffd1Lattice
     2100000: EmilyShoeMat
     2100002: EmilyShirtMat
     2100004: EmilySkinMat
@@ -68,7 +62,10 @@ ModelImporter:
     4300014: EmilyPants
     4300016: EmilyRightHand
     4300018: EmilyLeftHand
-    7400000: Take 001
+    7400000: Walk
+    7400002: Idle
+    7400004: Swipe
+    7400006: Throw Hands
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -99,7 +96,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Walk
       takeName: Take 001
       firstFrame: 1
       lastFrame: 58
@@ -110,6 +107,90 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Swipe
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 105
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Throw Hands
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 115
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

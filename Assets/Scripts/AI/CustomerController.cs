@@ -6,11 +6,14 @@ using UnityEngine;
 public class CustomerController : MonoBehaviour
 {
     public float lookRadius = 3f;
-    private GameManager GameManager;
     public float numberOfIdems = 0.0f;
     public float MaxNumberOfIdems;
-    public bool end = false;
+    public float targetTime;
+    GameManager GameManager;
+    bool end = false;
+    private bool wait = false;
     Transform point;
+    Animator anim;
 
     UnityEngine.AI.NavMeshAgent agent;
 
@@ -18,9 +21,12 @@ public class CustomerController : MonoBehaviour
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)].transform;
+        anim = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         MaxNumberOfIdems = Random.Range(1,4);
         GameManager.AICount++;
+        targetTime = Random.Range(3,5);
+        anim.SetBool("Walking", true);
     }
 
     void FixedUpdate()
@@ -33,9 +39,17 @@ public class CustomerController : MonoBehaviour
 
             if(distance <= lookRadius)
             {
-                point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)].transform;
-                agent.SetDestination(point.position);
-                numberOfIdems++;
+                anim.SetBool("Walking", false);
+                waitTimer();
+
+                if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") && wait)
+                {
+                    anim.SetBool("Walking", true);
+                    point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)].transform;
+                    agent.SetDestination(point.position);
+                    numberOfIdems++;
+                    wait = false;
+                }
             }
         }
 
@@ -87,9 +101,20 @@ public class CustomerController : MonoBehaviour
         transform.rotation = Quaternion.Slerp(point.rotation, lookRatation, Time.deltaTime * 5f);
     }
 
-     /* void OnDrawGizmosSelected()
+    void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawSphere(transform.position, lookRadius);
-    } */
+    }
+
+    void waitTimer()
+    {
+        targetTime -= Time.deltaTime;
+        
+        if (targetTime <= 0.0f)
+        {
+            targetTime = Random.Range(3,5);
+            wait = true;
+        }
+    }
 }
