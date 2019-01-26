@@ -413,6 +413,11 @@ PrefabInstance:
       propertyPath: stressMeter
       value: 
       objectReference: {fileID: 1375342033}
+    - target: {fileID: 3638980408288214579, guid: c999c8970f845469894e66db02ed09f9,
+        type: 3}
+      propertyPath: shoppingListObject
+      value: 
+      objectReference: {fileID: 4969801145557838561}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c999c8970f845469894e66db02ed09f9, type: 3}
 --- !u!1001 &4969801145557838560
@@ -532,23 +537,24 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4969801146459395474, guid: 8f4f23bbde775463491dc588de695808,
+    - target: {fileID: 4969801146323440295, guid: 8f4f23bbde775463491dc588de695808,
         type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1831025831}
+    - target: {fileID: 1351774467, guid: 8f4f23bbde775463491dc588de695808, type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4969801146459395474, guid: 8f4f23bbde775463491dc588de695808,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1688905942, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1688905942, guid: 8f4f23bbde775463491dc588de695808, type: 3}
+    - target: {fileID: 1351774467, guid: 8f4f23bbde775463491dc588de695808, type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4f23bbde775463491dc588de695808, type: 3}
+--- !u!1 &4969801145557838561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1464286662, guid: 8f4f23bbde775463491dc588de695808,
+    type: 3}
+  m_PrefabInstance: {fileID: 4969801145557838560}
+  m_PrefabAsset: {fileID: 0}

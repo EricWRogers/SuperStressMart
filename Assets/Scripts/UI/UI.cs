@@ -9,20 +9,17 @@ public class UI : MonoBehaviour
     public GameObject shoppingListObject;
     private int open = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
             OpenList();
         }
-
     }
 
     public void SubtractStressBar(float percentage)
