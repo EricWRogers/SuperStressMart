@@ -6,7 +6,7 @@ using UnityEditor.AI;
 public class CustomerController : MonoBehaviour
 {
     public float lookRadius = 10f;
-
+    
     GameObject player;
     UnityEngine.AI.NavMeshAgent agent;
 
