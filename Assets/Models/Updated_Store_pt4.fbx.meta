@@ -120,7 +120,107 @@ ModelImporter:
     4300032: Fridge_Door1
     4300034: Couch
     4300036: Couch1
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BRoomLightFixture
+    second: {fileID: 2100000, guid: 5379079a71d6b5e2c931958a8d0a4c67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BathroomDoorMat
+    second: {fileID: 2100000, guid: ce29bbf4ec049b97f88ddc8163fca3f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BathroomwallMat
+    second: {fileID: 2100000, guid: 6470ea5150faf0b44b975d5be2679a9b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CeilingMat
+    second: {fileID: 2100000, guid: 4329988b881b0139fa870a5186e458c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CheckoutLaneMat
+    second: {fileID: 2100000, guid: b3d6fa7f86062e807bb3a1b01e39ecdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CouchMat
+    second: {fileID: 2100000, guid: 2dd68176b926ddf40b61aedfd2b6fc00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FDoorMat
+    second: {fileID: 2100000, guid: d58e81b7b7f835ef684fec8a7507ed17, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FreezerDoorMat
+    second: {fileID: 2100000, guid: 5ce6ee2cc8ec77ee0802aa7be9ed1025, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FruitVegMat
+    second: {fileID: 2100000, guid: 9fcbfd26d4374634582064b97b5e94ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GlassMat1
+    second: {fileID: 2100000, guid: b49c0169c9d57042ab48a86f806168e3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: InsideWallsMat
+    second: {fileID: 2100000, guid: 6debbfc5fbbbf2cea806375fb1c881fa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: OutsideWallsMat
+    second: {fileID: 2100000, guid: b860324526cc0197fb6f997777c6f9d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ShelfMat
+    second: {fileID: 2100000, guid: 50a0c0de55b217789b13ab7fb4b3acbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SinkMat
+    second: {fileID: 2100000, guid: 281b80f06dfbfb55980ca118b1e50b27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ToiletMat
+    second: {fileID: 2100000, guid: 1dd0b40f68650c0bcb5928085a48c0ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TubeLightFixtureMat
+    second: {fileID: 2100000, guid: a83c574c957b29d679f5e8892e69b8c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TubeLightMat
+    second: {fileID: 2100000, guid: 8d267d4e8cb2a9146af57ed2b8932e09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: freezerMst
+    second: {fileID: 2100000, guid: c77ed208ef9878342831dfd0ff90173b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 99463c1ffc05da544be05337ab23f7fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roofMat
+    second: {fileID: 2100000, guid: dff079b6853e22ebd84ce14450ffd2c2, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
