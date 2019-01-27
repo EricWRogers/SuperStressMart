@@ -13,6 +13,7 @@ public class UI : MonoBehaviour
 
     //Credits
     public GameObject creditsMenu;
+    public Slider soundSlider;
 
     //hud
     public GameObject hud;
@@ -30,7 +31,7 @@ public class UI : MonoBehaviour
         creditsMenu.SetActive(false);
         hud.SetActive(false);
         stressMeter.fillAmount = 0f;
-
+        soundSlider = soundSlider.GetComponent<Slider>();
     }
 
     void Update()
@@ -98,5 +99,9 @@ public class UI : MonoBehaviour
             }
         }
 
+    }
+    public void SoundSlider()
+    {
+        AudioListener.volume = soundSlider.value;
     }
 }

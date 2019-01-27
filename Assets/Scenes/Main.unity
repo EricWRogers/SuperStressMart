@@ -667,6 +667,11 @@ PrefabInstance:
       objectReference: {fileID: 802888353}
     - target: {fileID: 3638980408288214579, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
+      propertyPath: soundSlider
+      value: 
+      objectReference: {fileID: 4969801145557838562}
+    - target: {fileID: 3638980408288214579, guid: c999c8970f845469894e66db02ed09f9,
+        type: 3}
       propertyPath: hud
       value: 
       objectReference: {fileID: 352859765}
@@ -967,6 +972,21 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4969801146323440295, guid: 8f4f23bbde775463491dc588de695808,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1831025831}
+    - target: {fileID: 4969801146459395474, guid: 8f4f23bbde775463491dc588de695808,
+        type: 3}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4969801146459395474, guid: 8f4f23bbde775463491dc588de695808,
+        type: 3}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4f23bbde775463491dc588de695808, type: 3}
 --- !u!1 &4969801145557838561 stripped
@@ -975,3 +995,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4969801145557838560}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4969801145557838562 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 280271934, guid: 8f4f23bbde775463491dc588de695808,
+    type: 3}
+  m_PrefabInstance: {fileID: 4969801145557838560}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
