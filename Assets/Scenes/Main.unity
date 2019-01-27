@@ -131,6 +131,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.010000013, y: 0.010000001, z: 0.009999998}
   m_Center: {x: -0.00000005448237, y: 0.0000000018626451, z: -0.0000000023283064}
+--- !u!1 &192374910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5218265571520673856, guid: 8f4f23bbde775463491dc588de695808,
+    type: 3}
+  m_PrefabInstance: {fileID: 4458164033333123576}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &280271934 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4458164033606567366, guid: 8f4f23bbde775463491dc588de695808,
@@ -288,6 +294,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Store
       objectReference: {fileID: 0}
+    - target: {fileID: 7305463572668984199, guid: e5afe430e4cac0fc7afa8b25e4a8c73a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3955563364522447577, guid: e5afe430e4cac0fc7afa8b25e4a8c73a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -412,11 +423,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 15.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 7305463572668984199, guid: e5afe430e4cac0fc7afa8b25e4a8c73a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6249611838228298505, guid: e5afe430e4cac0fc7afa8b25e4a8c73a,
         type: 3}
@@ -1037,6 +1043,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -20.77
       objectReference: {fileID: 0}
+    - target: {fileID: 561700543499548604, guid: 8f392629600034665b64bf0203019c04,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5977299591167245378, guid: 8f392629600034665b64bf0203019c04,
+        type: 3}
+      propertyPath: backGroudSource
+      value: 
+      objectReference: {fileID: 968743132115388932}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f392629600034665b64bf0203019c04, type: 3}
 --- !u!1 &887311898726999609 stripped
@@ -1354,7 +1370,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 4458164033333123576}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 192374910}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -1373,6 +1389,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6007395555154523628, guid: c999c8970f845469894e66db02ed09f9,
+        type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
     - target: {fileID: 6007395555154523603, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
       propertyPath: GameManager
@@ -1448,11 +1469,11 @@ PrefabInstance:
       propertyPath: overlayPanel
       value: 
       objectReference: {fileID: 6437445084565152051}
-    - target: {fileID: 6007395555154523628, guid: c999c8970f845469894e66db02ed09f9,
+    - target: {fileID: 6007395555154523603, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
-      propertyPath: m_Name
-      value: UIManager
-      objectReference: {fileID: 0}
+      propertyPath: overLayPanel
+      value: 
+      objectReference: {fileID: 192374910}
     - target: {fileID: 6007395555154523602, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
       propertyPath: m_LocalPosition.x
