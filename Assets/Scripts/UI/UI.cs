@@ -86,10 +86,14 @@ public class UI : MonoBehaviour
         }
         if (AudioManager.backGroudSource.isPlaying || AudioManager.voicesSource.isPlaying)
         {
-            if (AudioManager.currentVoice != 0) 
+            if (AudioManager.currentVoice>0) 
             {
                 overlayPanel.color = playerColors[AudioManager.currentVoice];
                 overLayPanel.SetActive(true);
+            }
+            else
+            {
+                overLayPanel.SetActive(false);
             }
 
         }
