@@ -17,11 +17,17 @@ public class UI : MonoBehaviour
 
     //hud
     public GameObject hud;
+    public GameObject controlPanel;
+    public GameObject battery;
+    public Image batteryMeter;
     public Image stressMeter;
     public GameObject shoppingListObject;
     public Toggle[] toggles;
     public Text[] texts;
-    private int open = 0;
+    private int openList = 0;
+    private int openControls = 0;
+    private int playMusic = 0;
+    private float controlTimer = 0f;
 
     //GameOver
     public GameObject gameOverPanel;
@@ -39,9 +45,25 @@ public class UI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             OpenList();
+        }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            OpenControl();
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Music();
+        }
+        if (controlTimer > 0)
+        {
+            controlTimer -= Time.deltaTime;
+            if (controlTimer <= 0)
+            {
+                controlPanel.SetActive(false);
+            }
         }
     }
 
@@ -55,21 +77,40 @@ public class UI : MonoBehaviour
     }
     private void OpenList()
     {
-        if (open == 0)
+        if (openList == 0)
         {
             shoppingListObject.SetActive(true);
-            open = 1;
+            openList = 1;
         }
         else
         {
             shoppingListObject.SetActive(false);
-            open = 0;
+            openList = 0;
+        }
+    }
+    private void OpenControl()
+    {
+        if (openControls == 0)
+        {
+            controlPanel.SetActive(true);
+            openControls = 1;
+        }
+        else
+        {
+            controlPanel.SetActive(false);
+            openControls = 0;
+        }
+        if(controlTimer > 0f)
+        {
+            controlTimer = 0f;
         }
     }
     public void StartButton()
     {
         startMenu.SetActive(false);
         hud.SetActive(true);
+        controlPanel.SetActive(true);
+        controlTimer = 20f;
     }
     public void OptionsButton()
     {
@@ -108,6 +149,20 @@ public class UI : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
+    }
+
+    public void Music()
+    {
+        if (playMusic == 0)
+        {
+            battery.SetActive(true);
+            playMusic = 1;
+        }
+        else
+        {
+            battery.SetActive(false);
+            playMusic = 0;
+        }
     }
 
 }
