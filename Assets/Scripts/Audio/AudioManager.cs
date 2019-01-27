@@ -32,11 +32,36 @@ public struct Clips
     public bool hasPlayed;
 }
 
-public class AudioManager : MonoBehaviour {
+public class AudioManager : MonoBehaviour
+{
 
-    public List<Clips> clips= new List<Clips>();
+    public List<Clips> startingGameClips = new List<Clips>();
+    public List<Clips> npcTalkingToEmilyClips = new List<Clips>();
+    public List<Clips> pickingUpItemClips = new List<Clips>();
+    public List<Clips> hidesInBathroomClips = new List<Clips>();
+    public List<Clips> pathBlockedClips = new List<Clips>();
+    public List<Clips> anxietyLaxClips = new List<Clips>();
+    public List<Clips> npcStandingBetweenClips = new List<Clips>();
+    public List<Clips> fireAlarmClips = new List<Clips>();
+    public List<Clips> successClips = new List<Clips>();
+    public List<Clips> passesOutClips = new List<Clips>();
+    public List<Clips> argumentBreaksOutClips = new List<Clips>();
+    public List<Clips> cardDeclinedClips = new List<Clips>();
+    public List<Clips> highAnxietyClips = new List<Clips>();
+    public List<Clips> checkingOutClips = new List<Clips>();
+    public List<Clips> seeingExClips = new List<Clips>();
+    public List<Clips> shelfFallsClips = new List<Clips>();
+    public List<Clips> phoneMusicClips = new List<Clips>();
+
+    public AudioSource backGroudSource;
+    public AudioSource voicesSource;
 
     //public AudioClip backGroundMusic;
+    private void Start()
+    {
+        backGroudSource = backGroudSource.GetComponent<AudioSource>();
+        voicesSource = voicesSource.GetComponent<AudioSource>();
+    }
 
     public void SoundsEventTrigger(SoundEvents soundEvents)
     {
@@ -76,6 +101,16 @@ public class AudioManager : MonoBehaviour {
                 break;
             case SoundEvents.ShelfFalls:
                 break;
+            case SoundEvents.PhoneMusic:
+                break;
+            case SoundEvents.BackGroundMusic:
+                break;
         }
     }
+
+    private void StartingGame()
+    {
+
+    }
 }
+

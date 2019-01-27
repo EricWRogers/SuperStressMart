@@ -23,6 +23,9 @@ public class UI : MonoBehaviour
     public Text[] texts;
     private int open = 0;
 
+    //GameOver
+    public GameObject gameOverPanel;
+    public GameObject winPanel;
 
     void Start()
     {
@@ -63,7 +66,6 @@ public class UI : MonoBehaviour
             open = 0;
         }
     }
-
     public void StartButton()
     {
         startMenu.SetActive(false);
@@ -98,10 +100,14 @@ public class UI : MonoBehaviour
                 toggles[i].isOn = !toggles[i].isOn;
             }
         }
-
     }
     public void SoundSlider()
     {
         AudioListener.volume = soundSlider.value;
     }
+    public void GameOver()
+    {
+        gameOverPanel.SetActive(true);
+    }
+
 }

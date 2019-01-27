@@ -636,8 +636,24 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
+        type: 3}
+      propertyPath: voicesSource
+      value: 
+      objectReference: {fileID: 1358633693827668550}
+    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
+        type: 3}
+      propertyPath: backGroudSource
+      value: 
+      objectReference: {fileID: 3638980409353313940}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 791453cf12ade1345bbbdf2e51b29f52, type: 3}
+--- !u!82 &1358633693827668550 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6339472363672771361, guid: 791453cf12ade1345bbbdf2e51b29f52,
+    type: 3}
+  m_PrefabInstance: {fileID: 1358633693827668549}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3638980409353313939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -822,6 +838,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c999c8970f845469894e66db02ed09f9, type: 3}
+--- !u!82 &3638980409353313940 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 968743132115388932, guid: c999c8970f845469894e66db02ed09f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3638980409353313939}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4969801145557838560
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -964,14 +986,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 504443707}
-    - target: {fileID: 1688905942, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1688905942, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4969801146323440295, guid: 8f4f23bbde775463491dc588de695808,
         type: 3}
       propertyPath: m_Camera
