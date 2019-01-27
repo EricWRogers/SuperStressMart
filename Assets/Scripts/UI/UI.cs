@@ -33,6 +33,7 @@ public class UI : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
+
     void Start()
     {
         startMenu.SetActive(true);
@@ -41,6 +42,7 @@ public class UI : MonoBehaviour
         hud.SetActive(false);
         stressMeter.fillAmount = 0f;
         soundSlider = soundSlider.GetComponent<Slider>();
+
     }
 
     void Update()
