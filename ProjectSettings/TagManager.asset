@@ -9,6 +9,7 @@ TagManager:
   - Enter Door
   - Exit Door
   - Exit
+  - end
   layers:
   - Default
   - TransparentFX

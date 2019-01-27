@@ -7,7 +7,7 @@ public class ThirdPersonCharacterController : MonoBehaviour
     public float Speed;
     public float OriginalSpeed;
     Animator anim;
-
+    public UI ui;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,9 +38,10 @@ public class ThirdPersonCharacterController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (true)
+        if (other.tag == "end")
         {
-            Debug.Log("entered");
+            Debug.Log("end");
+            ui.Win();
         }
     }
 }
