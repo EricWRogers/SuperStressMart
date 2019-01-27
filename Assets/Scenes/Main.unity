@@ -668,22 +668,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
         type: 3}
-      propertyPath: voicesSource
-      value: 
-      objectReference: {fileID: 1358633693827668550}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
       propertyPath: backGroudSource
       value: 
       objectReference: {fileID: 3638980409353313940}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 791453cf12ade1345bbbdf2e51b29f52, type: 3}
---- !u!82 &1358633693827668550 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6339472363672771361, guid: 791453cf12ade1345bbbdf2e51b29f52,
-    type: 3}
-  m_PrefabInstance: {fileID: 1358633693827668549}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3638980409353313939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1058,6 +1047,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2079453918477469780, guid: 8f4f23bbde775463491dc588de695808,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.199951
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4f23bbde775463491dc588de695808, type: 3}

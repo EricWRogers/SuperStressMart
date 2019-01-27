@@ -50,14 +50,10 @@ MonoBehaviour:
   CheckStand: []
   enter: {fileID: 0}
   exit: {fileID: 0}
-  spawn: 0
-  Coustomer: {fileID: 0}
-  Employee: {fileID: 0}
-  spawnTime: 3
-  maxCoustomerAI: 10
+  isChasing: 0
   coustomerAI: 0
-  maxEmployeeAI: 10
-  EmployeeAI: 0
+  fireTimeLeft: 60
+  StressBar: 0
 --- !u!114 &5867110706873250057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,10 +66,61 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66585094bfaad4d629c00dc9897ee01b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clips:
+  startingGameClips:
+  - sounds: 0
+    audio: {fileID: 8300000, guid: 0fce07ee68e3544e08c16e9dd04864b0, type: 3}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 8300000, guid: 93d9d27d2367e4460828b803a1b2dcde, type: 3}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 8300000, guid: 4e7f22a0e384f47df9c1540c7d6c9312, type: 3}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 8300000, guid: b89caad2ea2df42649d5cc79490e137c, type: 3}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 8300000, guid: ab9c88deaf58941c39e0886f2cec2423, type: 3}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 8300000, guid: c3ae5e0ce13344c6b9b3a83a35c46dea, type: 3}
+    hasPlayed: 0
+  npcTalkingToEmilyClips:
+  - sounds: 2
+    audio: {fileID: 8300000, guid: 6b7bb0b5ab90e404f98312fd43d7ca80, type: 3}
+    hasPlayed: 0
   - sounds: 0
     audio: {fileID: 0}
     hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 0}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 0}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 0}
+    hasPlayed: 0
+  - sounds: 0
+    audio: {fileID: 0}
+    hasPlayed: 0
+  pickingUpItemClips: []
+  hidesInBathroomClips: []
+  pathBlockedClips: []
+  anxietyLaxClips: []
+  npcStandingBetweenClips: []
+  fireAlarmClips: []
+  successClips: []
+  passesOutClips: []
+  argumentBreaksOutClips: []
+  cardDeclinedClips: []
+  highAnxietyClips: []
+  checkingOutClips: []
+  seeingExClips: []
+  shelfFallsClips: []
+  phoneMusicClips: []
+  backGroudSource: {fileID: 0}
+  voicesSource: {fileID: 6339472363672771361}
 --- !u!82 &6339472363672771361
 AudioSource:
   m_ObjectHideFlags: 0
