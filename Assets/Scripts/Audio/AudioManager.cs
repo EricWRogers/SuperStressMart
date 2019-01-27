@@ -27,7 +27,7 @@ public enum SoundEvents
 [System.Serializable]
 public class Clips
 {
-    public SoundEvents sounds;
+    public int playerVoice;
     public AudioClip audio;
     public bool hasPlayed=false;
 }
@@ -55,6 +55,8 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource backGroudSource;
     public AudioSource voicesSource;
+
+    public int currentVoice = 0;
 
     //public AudioClip backGroundMusic;
     private void Start()

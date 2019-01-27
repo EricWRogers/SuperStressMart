@@ -76,6 +76,7 @@ MonoBehaviour:
   pillsText: {fileID: 0}
   gameOverPanel: {fileID: 0}
   winPanel: {fileID: 0}
+  overlayPanel: {fileID: 0}
 --- !u!82 &968743132115388932
 AudioSource:
   m_ObjectHideFlags: 0
