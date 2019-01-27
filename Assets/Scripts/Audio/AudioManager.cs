@@ -67,8 +67,6 @@ public class AudioManager : MonoBehaviour
 
     public void SoundsEventTrigger(SoundEvents soundEvents)
     {
-        if (!backGroudSource.isPlaying || !voicesSource.isPlaying)
-        {
             switch (soundEvents)
             {
                 case SoundEvents.StartingGame:
@@ -126,207 +124,261 @@ public class AudioManager : MonoBehaviour
                     break;
                 case SoundEvents.BackGroundMusic:
                     break;
-            }
+            
         }
     }
 
     public void StartingGame()
     {
-        int randomInt = Random.Range(0, startingGameClips.Count);
-        if (!startingGameClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice= startingGameClips[randomInt].playerVoice;
-            voicesSource.clip = startingGameClips[randomInt].audio;
-            voicesSource.Play();
-            startingGameClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, startingGameClips.Count);
+            if (!startingGameClips[randomInt].hasPlayed)
+            {
+                currentVoice = startingGameClips[randomInt].playerVoice;
+                voicesSource.clip = startingGameClips[randomInt].audio;
+                voicesSource.Play();
+                startingGameClips[randomInt].hasPlayed = true;
+            }
         }
     }
 
     private void NPCTalkingToEmily()
     {
-        int randomInt = Random.Range(0, npcTalkingToEmilyClips.Count);
-        if (!npcTalkingToEmilyClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = npcTalkingToEmilyClips[randomInt].playerVoice;
-            voicesSource.clip = npcTalkingToEmilyClips[randomInt].audio;
-            voicesSource.Play();
-            npcTalkingToEmilyClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, npcTalkingToEmilyClips.Count);
+            if (!npcTalkingToEmilyClips[randomInt].hasPlayed)
+            {
+                currentVoice = npcTalkingToEmilyClips[randomInt].playerVoice;
+                voicesSource.clip = npcTalkingToEmilyClips[randomInt].audio;
+                voicesSource.Play();
+                npcTalkingToEmilyClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void PickingUpItem()
     {
-        int randomInt = Random.Range(0, pickingUpItemClips.Count);
-        if (!pickingUpItemClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = pickingUpItemClips[randomInt].playerVoice;
-            voicesSource.clip = pickingUpItemClips[randomInt].audio;
-            voicesSource.Play();
-            pickingUpItemClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, pickingUpItemClips.Count);
+            if (!pickingUpItemClips[randomInt].hasPlayed)
+            {
+                currentVoice = pickingUpItemClips[randomInt].playerVoice;
+                voicesSource.clip = pickingUpItemClips[randomInt].audio;
+                voicesSource.Play();
+                pickingUpItemClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void HidesInBathroom()
     {
-        int randomInt = Random.Range(0, hidesInBathroomClips.Count);
-        if (!hidesInBathroomClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = hidesInBathroomClips[randomInt].playerVoice;
-            voicesSource.clip = hidesInBathroomClips[randomInt].audio;
-            voicesSource.Play();
-            hidesInBathroomClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, hidesInBathroomClips.Count);
+            if (!hidesInBathroomClips[randomInt].hasPlayed)
+            {
+                currentVoice = hidesInBathroomClips[randomInt].playerVoice;
+                voicesSource.clip = hidesInBathroomClips[randomInt].audio;
+                voicesSource.Play();
+                hidesInBathroomClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void PathBlocked()
     {
-        int randomInt = Random.Range(0, pathBlockedClips.Count);
-        if (!pathBlockedClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = pathBlockedClips[randomInt].playerVoice;
-            voicesSource.clip = pathBlockedClips[randomInt].audio;
-            voicesSource.Play();
-            pathBlockedClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, pathBlockedClips.Count);
+            if (!pathBlockedClips[randomInt].hasPlayed)
+            {
+                currentVoice = pathBlockedClips[randomInt].playerVoice;
+                voicesSource.clip = pathBlockedClips[randomInt].audio;
+                voicesSource.Play();
+                pathBlockedClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void AnxietyLax()
     {
-        int randomInt = Random.Range(0, anxietyLaxClips.Count);
-        if (!anxietyLaxClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = anxietyLaxClips[randomInt].playerVoice;
-            voicesSource.clip = anxietyLaxClips[randomInt].audio;
-            voicesSource.Play();
-            anxietyLaxClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, anxietyLaxClips.Count);
+            if (!anxietyLaxClips[randomInt].hasPlayed)
+            {
+                currentVoice = anxietyLaxClips[randomInt].playerVoice;
+                voicesSource.clip = anxietyLaxClips[randomInt].audio;
+                voicesSource.Play();
+                anxietyLaxClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void NPCStandingBetween()
     {
-        int randomInt = Random.Range(0, npcStandingBetweenClips.Count);
-        if (!npcStandingBetweenClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = npcStandingBetweenClips[randomInt].playerVoice;
-            voicesSource.clip = npcStandingBetweenClips[randomInt].audio;
-            voicesSource.Play();
-            npcStandingBetweenClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, npcStandingBetweenClips.Count);
+            if (!npcStandingBetweenClips[randomInt].hasPlayed)
+            {
+                currentVoice = npcStandingBetweenClips[randomInt].playerVoice;
+                voicesSource.clip = npcStandingBetweenClips[randomInt].audio;
+                voicesSource.Play();
+                npcStandingBetweenClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void FireAlarm()
     {
-        int randomInt = Random.Range(0, fireAlarmClips.Count);
-        if (!fireAlarmClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = fireAlarmClips[randomInt].playerVoice;
-            voicesSource.clip = fireAlarmClips[randomInt].audio;
-            voicesSource.Play();
-            fireAlarmClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, fireAlarmClips.Count);
+            if (!fireAlarmClips[randomInt].hasPlayed)
+            {
+                currentVoice = fireAlarmClips[randomInt].playerVoice;
+                voicesSource.clip = fireAlarmClips[randomInt].audio;
+                voicesSource.Play();
+                fireAlarmClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void Success()
     {
-        int randomInt = Random.Range(0, successClips.Count);
-        if (!successClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = successClips[randomInt].playerVoice;
-            voicesSource.clip = successClips[randomInt].audio;
-            voicesSource.Play();
-            successClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, successClips.Count);
+            if (!successClips[randomInt].hasPlayed)
+            {
+                currentVoice = successClips[randomInt].playerVoice;
+                voicesSource.clip = successClips[randomInt].audio;
+                voicesSource.Play();
+                successClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void PassesOut()
     {
-        int randomInt = Random.Range(0, passesOutClips.Count);
-        if (!passesOutClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = passesOutClips[randomInt].playerVoice;
-            voicesSource.clip = passesOutClips[randomInt].audio;
-            voicesSource.Play();
-            passesOutClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, passesOutClips.Count);
+            if (!passesOutClips[randomInt].hasPlayed)
+            {
+                currentVoice = passesOutClips[randomInt].playerVoice;
+                voicesSource.clip = passesOutClips[randomInt].audio;
+                voicesSource.Play();
+                passesOutClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void ArgumentBreaksOut()
     {
-        int randomInt = Random.Range(0, argumentBreaksOutClips.Count);
-        if (!argumentBreaksOutClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = argumentBreaksOutClips[randomInt].playerVoice;
-            voicesSource.clip = argumentBreaksOutClips[randomInt].audio;
-            voicesSource.Play();
-            argumentBreaksOutClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, argumentBreaksOutClips.Count);
+            if (!argumentBreaksOutClips[randomInt].hasPlayed)
+            {
+                currentVoice = argumentBreaksOutClips[randomInt].playerVoice;
+                voicesSource.clip = argumentBreaksOutClips[randomInt].audio;
+                voicesSource.Play();
+                argumentBreaksOutClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void CardDeclined()
     {
-        int randomInt = Random.Range(0, cardDeclinedClips.Count);
-        if (!cardDeclinedClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = cardDeclinedClips[randomInt].playerVoice;
-            voicesSource.clip = cardDeclinedClips[randomInt].audio;
-            voicesSource.Play();
-            cardDeclinedClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, cardDeclinedClips.Count);
+            if (!cardDeclinedClips[randomInt].hasPlayed)
+            {
+                currentVoice = cardDeclinedClips[randomInt].playerVoice;
+                voicesSource.clip = cardDeclinedClips[randomInt].audio;
+                voicesSource.Play();
+                cardDeclinedClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void HighAnxiety()
     {
-        int randomInt = Random.Range(0, highAnxietyClips.Count);
-        if (!highAnxietyClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = highAnxietyClips[randomInt].playerVoice;
-            voicesSource.clip = highAnxietyClips[randomInt].audio;
-            voicesSource.Play();
-            highAnxietyClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, highAnxietyClips.Count);
+            if (!highAnxietyClips[randomInt].hasPlayed)
+            {
+                currentVoice = highAnxietyClips[randomInt].playerVoice;
+                voicesSource.clip = highAnxietyClips[randomInt].audio;
+                voicesSource.Play();
+                highAnxietyClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void CheckingOut()
     {
-        int randomInt = Random.Range(0, checkingOutClips.Count);
-        if (!checkingOutClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = checkingOutClips[randomInt].playerVoice;
-            voicesSource.clip = checkingOutClips[randomInt].audio;
-            voicesSource.Play();
-            checkingOutClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, checkingOutClips.Count);
+            if (!checkingOutClips[randomInt].hasPlayed)
+            {
+                currentVoice = checkingOutClips[randomInt].playerVoice;
+                voicesSource.clip = checkingOutClips[randomInt].audio;
+                voicesSource.Play();
+                checkingOutClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void SeeingEx()
     {
-        int randomInt = Random.Range(0, seeingExClips.Count);
-        if (!seeingExClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = seeingExClips[randomInt].playerVoice;
-            voicesSource.clip = seeingExClips[randomInt].audio;
-            voicesSource.Play();
-            seeingExClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, seeingExClips.Count);
+            if (!seeingExClips[randomInt].hasPlayed)
+            {
+                currentVoice = seeingExClips[randomInt].playerVoice;
+                voicesSource.clip = seeingExClips[randomInt].audio;
+                voicesSource.Play();
+                seeingExClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void ShelfFalls()
     {
-        int randomInt = Random.Range(0, shelfFallsClips.Count);
-        if (!shelfFallsClips[randomInt].hasPlayed)
+        if (!voicesSource.isPlaying)
         {
-            currentVoice = shelfFallsClips[randomInt].playerVoice;
-            voicesSource.clip = shelfFallsClips[randomInt].audio;
-            voicesSource.Play();
-            shelfFallsClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, shelfFallsClips.Count);
+            if (!shelfFallsClips[randomInt].hasPlayed)
+            {
+                currentVoice = shelfFallsClips[randomInt].playerVoice;
+                voicesSource.clip = shelfFallsClips[randomInt].audio;
+                voicesSource.Play();
+                shelfFallsClips[randomInt].hasPlayed = true;
+            }
         }
     }
     private void PhoneMusic()
     {
-        int randomInt = Random.Range(0, phoneMusicClips.Count);
-        if (!phoneMusicClips[randomInt].hasPlayed)
+        if (!backGroudSource.isPlaying)
         {
-            currentVoice = phoneMusicClips[randomInt].playerVoice;
-            backGroudSource.clip = phoneMusicClips[randomInt].audio;
-            backGroudSource.Play();
-            phoneMusicClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, phoneMusicClips.Count);
+            if (!phoneMusicClips[randomInt].hasPlayed)
+            {
+                currentVoice = phoneMusicClips[randomInt].playerVoice;
+                backGroudSource.clip = phoneMusicClips[randomInt].audio;
+                backGroudSource.Play();
+                phoneMusicClips[randomInt].hasPlayed = true;
+            }
         }
-    }
+        }
     private void BackGroundMusic()
     {
-        int randomInt = Random.Range(0, backGroundClips.Count);
-        if (!backGroundClips[randomInt].hasPlayed)
+        if (!backGroudSource.isPlaying)
         {
-            currentVoice = backGroundClips[randomInt].playerVoice;
-            backGroudSource.clip = backGroundClips[randomInt].audio;
-            backGroudSource.Play();
-            backGroundClips[randomInt].hasPlayed = true;
+            int randomInt = Random.Range(0, backGroundClips.Count);
+            if (!backGroundClips[randomInt].hasPlayed)
+            {
+                currentVoice = backGroundClips[randomInt].playerVoice;
+                backGroudSource.clip = backGroundClips[randomInt].audio;
+                backGroudSource.Play();
+                backGroundClips[randomInt].hasPlayed = true;
+            }
         }
     }
 }
