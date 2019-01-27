@@ -44,11 +44,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb5ccd66f3125464d9ff7297dcd5478a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GameManager: {fileID: 0}
   startMenu: {fileID: 0}
   optionsMenu: {fileID: 0}
   creditsMenu: {fileID: 0}
   soundSlider: {fileID: 0}
   hud: {fileID: 0}
+  controlPanel: {fileID: 0}
+  battery: {fileID: 0}
+  batteryMeter: {fileID: 0}
   stressMeter: {fileID: 0}
   shoppingListObject: {fileID: 0}
   toggles:
@@ -69,6 +73,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  pillsText: {fileID: 0}
+  gameOverPanel: {fileID: 0}
+  winPanel: {fileID: 0}
 --- !u!82 &968743132115388932
 AudioSource:
   m_ObjectHideFlags: 0

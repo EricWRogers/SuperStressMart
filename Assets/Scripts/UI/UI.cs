@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class UI : MonoBehaviour
 {
+    public GameManager GameManager;
+    private AudioManager AudioManager;
+
     //Start Menu
     public GameObject startMenu;
 
@@ -24,14 +27,20 @@ public class UI : MonoBehaviour
     public GameObject shoppingListObject;
     public Toggle[] toggles;
     public Text[] texts;
+    public Text pillsText;
+    private int pills = 3;
     private int openList = 0;
     private int openControls = 0;
     private int playMusic = 0;
     private float controlTimer = 0f;
+    private float pillTimer = 0f;
+    private float batteryTimer = 0f;
 
     //GameOver
     public GameObject gameOverPanel;
     public GameObject winPanel;
+
+    public GameObject overlayPanel;
 
 
     void Start()
@@ -42,12 +51,15 @@ public class UI : MonoBehaviour
         hud.SetActive(false);
         stressMeter.fillAmount = 0f;
         soundSlider = soundSlider.GetComponent<Slider>();
-
+        GameManager = GameManager.GetComponent<GameManager>();
+        AudioManager = GameManager.GetComponent<AudioManager>();
+        pills = 3;
+        pillsText.text = "" + pills;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             OpenList();
         }
@@ -59,6 +71,10 @@ public class UI : MonoBehaviour
         {
             Music();
         }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            TakePill();
+        }
         if (controlTimer > 0)
         {
             controlTimer -= Time.deltaTime;
@@ -67,16 +83,19 @@ public class UI : MonoBehaviour
                 controlPanel.SetActive(false);
             }
         }
+
+
+        stressMeter.fillAmount = GameManager.StressBar;
+    }
+    private void FixedUpdate()
+    {
+        if (pillTimer>0f)
+        {
+            pillTimer -= Time.deltaTime;
+            GameManager.ChangeStress(-.1f);
+        }
     }
 
-    public void SubtractStressBar(float percentage)
-    {
-        stressMeter.fillAmount -= percentage;
-    }
-    public void AddStressBar(float percentage)
-    {
-        stressMeter.fillAmount += percentage;
-    }
     private void OpenList()
     {
         if (openList == 0)
@@ -113,6 +132,8 @@ public class UI : MonoBehaviour
         hud.SetActive(true);
         controlPanel.SetActive(true);
         controlTimer = 20f;
+        AudioManager.SoundsEventTrigger(SoundEvents.StartingGame);
+
     }
     public void OptionsButton()
     {
@@ -151,6 +172,7 @@ public class UI : MonoBehaviour
     public void GameOver()
     {
         gameOverPanel.SetActive(true);
+        AudioManager.SoundsEventTrigger(SoundEvents.PassesOut);
     }
 
     public void Music()
@@ -165,6 +187,13 @@ public class UI : MonoBehaviour
             battery.SetActive(false);
             playMusic = 0;
         }
+    }
+    public void TakePill()
+    {
+        pills--;
+        pillsText.text = "" + pills;
+        AudioManager.SoundsEventTrigger(SoundEvents.AnxietyLax);
+        pillTimer = 10f;
     }
 
 }

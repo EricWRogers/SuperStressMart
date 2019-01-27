@@ -11,14 +11,6 @@ public class UiEditor : Editor
         DrawDefaultInspector();
 
         UI ui = (UI)target;
-        if (GUILayout.Button("-"))
-        {
-            ui.SubtractStressBar(0.2f);
-        }
-        if (GUILayout.Button("+"))
-        {
-            ui.AddStressBar(0.3f);
-        }
         if (GUILayout.Button("search"))
         {
             ui.CheckedIfPickedUp("Items");

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -84,6 +85,7 @@ public class GameManager : MonoBehaviour
             PlayerGO.GetComponent<ThirdPersonCharacterController>().Speed = PlayerGO.GetComponent<ThirdPersonCharacterController>().OriginalSpeed;
         }
     }
+
     public void ChangeStress(float mod)
     {
         StressBar =+ mod;
