@@ -77,11 +77,11 @@ public class GameManager : MonoBehaviour
         isChasing = BoldHolder;
         if (BoldHolder)
         {
-            PlayerGO.Speed = PlayerGO.OriginalSpeed * 2;
+            PlayerGO.GetComponent<ThirdPersonCharacterController>().Speed = PlayerGO.GetComponent<ThirdPersonCharacterController>().OriginalSpeed * 2;
         }
         else
         {
-            PlayerGO.Speed = PlayerGO.OriginalSpeed;
+            PlayerGO.GetComponent<ThirdPersonCharacterController>().Speed = PlayerGO.GetComponent<ThirdPersonCharacterController>().OriginalSpeed;
         }
     }
     public void ChangeStress(float mod)
