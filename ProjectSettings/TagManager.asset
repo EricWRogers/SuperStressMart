@@ -8,6 +8,7 @@ TagManager:
   - CheckStand
   - Enter Door
   - Exit Door
+  - Exit
   layers:
   - Default
   - TransparentFX

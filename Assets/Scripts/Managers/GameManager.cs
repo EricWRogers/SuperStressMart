@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
             
         } else if(coustomerAI < maxCoustomerAI && spawn)
         {
-            //Instantiate(Coustomer,enter.transform);
+            Instantiate(Coustomer,enter.transform);
             spawn = false;
         }
     }

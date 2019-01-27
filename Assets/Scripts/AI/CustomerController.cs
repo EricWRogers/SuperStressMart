@@ -31,7 +31,7 @@ public class CustomerController : MonoBehaviour
         AudioManager = GameManager.GetComponent<AudioManager>();
         Player = GameObject.FindGameObjectWithTag("Player");
 
-        MaxNumberOfIdems = Random.Range(1,4);
+        MaxNumberOfIdems = Random.Range(1,10);
         targetTime = Random.Range(3,5);
         point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
 
@@ -42,6 +42,7 @@ public class CustomerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        seenPlayer = true;
          if(!seenPlayer)
         {
             RaycastHit hit;
@@ -110,7 +111,6 @@ public class CustomerController : MonoBehaviour
                             numberOfIdems++;
                             wait = false;
                             gotPoint = false;
-                        
                         }
                     }
                 }

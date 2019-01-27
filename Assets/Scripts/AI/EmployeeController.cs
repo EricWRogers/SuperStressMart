@@ -132,7 +132,7 @@ public class EmployeeController : MonoBehaviour
         }
         else
         {
-            AudioManager.SoundsEventTrigger(SoundEvents.NPCTalkingToEmily);
+            AudioManager.SoundsEventTrigger(SoundEvents.PathBlocked);
             GameManager.Chasing(false);
             seenPlayer = true;
         }
@@ -163,7 +163,8 @@ public class EmployeeController : MonoBehaviour
  {
      yield return new WaitForSeconds(time);
  
-     // Code to execute after the delay
+     seenPlayer = false;
+
  }
 
     void OnDrawGizmosSelected()

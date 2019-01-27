@@ -35,4 +35,12 @@ public class ThirdPersonCharacterController : MonoBehaviour
         Debug.Log("Hor: " + Input.GetAxis("Horizontal") + " Ver: " + Input.GetAxis("Vertical"));
         transform.Translate(new Vector3(Input.GetAxis("Horizontal"), 0.0f,Input.GetAxis("Vertical")) * Speed * Time.deltaTime, Space.Self);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (true)
+        {
+            Debug.Log("entered");
+        }
+    }
 }
