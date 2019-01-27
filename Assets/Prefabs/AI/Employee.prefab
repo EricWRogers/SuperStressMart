@@ -248,9 +248,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 2.6
+  workArea: 1
+  serchLeangth: 0
+  audioLeangth: 0
   numberOfIdems: 0
   MaxNumberOfIdems: 0
-  targetTime: 0
+  giveupTime: 0
 --- !u!1 &555374398
 GameObject:
   m_ObjectHideFlags: 0

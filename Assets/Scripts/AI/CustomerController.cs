@@ -10,10 +10,15 @@ public class CustomerController : MonoBehaviour
     public float MaxNumberOfIdems;
     public float targetTime;
     GameManager GameManager;
+    public float serchLeangth;
+    public float audioLeangth;
+    GameObject Player;
     bool end = false;
     public bool wait = false;
+    bool seenPlayer = false;
     public bool gotPoint = false;
     GameObject point;
+    AudioManager AudioManager;
     Animator anim;
 
     UnityEngine.AI.NavMeshAgent agent;
@@ -23,6 +28,8 @@ public class CustomerController : MonoBehaviour
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         anim = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        AudioManager = GameManager.GetComponent<AudioManager>();
+        Player = GameObject.FindGameObjectWithTag("Player");
 
         MaxNumberOfIdems = Random.Range(1,4);
         targetTime = Random.Range(3,5);
@@ -35,6 +42,33 @@ public class CustomerController : MonoBehaviour
 
     void FixedUpdate()
     {
+         if(!seenPlayer)
+        {
+            RaycastHit hit;
+
+            if(!GameManager.isChasing)
+            {
+                if(Physics.Raycast(transform.position, Vector3.forward, out hit, serchLeangth))
+                {
+                    Debug.DrawRay(transform.position, Vector3.forward, Color.red);
+
+                    if(hit.collider.tag == "Player")
+                    {
+                        chasingPlayer(true);
+                    }
+                }
+            }else
+            {
+                if(Physics.Raycast(transform.position, Vector3.forward, out hit, audioLeangth))
+                {
+                    Debug.DrawRay(transform.position, Vector3.forward, Color.green);
+                    if(hit.collider.tag == "Player")
+                    {
+                        chasingPlayer(false);
+                    }
+                }
+            }
+        }
 
         if(numberOfIdems < MaxNumberOfIdems)
         {
@@ -136,6 +170,22 @@ public class CustomerController : MonoBehaviour
                point.GetComponent<WayPointManager>().available = false;    
                point = waypoint;
             }
+        }
+    }
+
+    void chasingPlayer(bool holder)
+    {
+        GameManager.Chasing(holder);
+
+        if(holder)
+        {
+            agent.SetDestination(Player.transform.position);
+        }
+        else
+        {
+            AudioManager.SoundsEventTrigger(SoundEvents.NPCTalkingToEmily);
+            GameManager.Chasing(false);
+            seenPlayer = true;
         }
     }
     
