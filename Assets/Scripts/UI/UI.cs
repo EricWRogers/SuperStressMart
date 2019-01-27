@@ -238,7 +238,7 @@ public class UI : MonoBehaviour
     }
     public void MainMenu()
     {
-        SceneManager.LoadScene(1);
+        Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
     }
 
 }
