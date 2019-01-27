@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject enter;
     public GameObject exit;
     private bool spawn;
-    public bool isChasing;
+    public bool isChasing = false;
     private GameObject Coustomer;
     private GameObject Employee;
     private float spawnTime = 3f;
@@ -56,6 +56,10 @@ public class GameManager : MonoBehaviour
                 spawn = true;
             }
         }
+    }
 
+    public void Chasing(bool BoldHolder)
+    {
+        isChasing = BoldHolder;
     }
 }
