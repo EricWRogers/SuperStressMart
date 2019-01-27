@@ -43,6 +43,9 @@ public class UI : MonoBehaviour
     public GameObject winPanel;
 
     public Image overlayPanel;
+    public GameObject overLayPanel;
+
+    public Color[] playerColors;
 
 
     void Start()
@@ -80,6 +83,19 @@ public class UI : MonoBehaviour
             {
                 controlPanel.SetActive(false);
             }
+        }
+        if (AudioManager.backGroudSource.isPlaying || AudioManager.voicesSource.isPlaying)
+        {
+            if (AudioManager.currentVoice != 0) 
+            {
+                overlayPanel.color = playerColors[AudioManager.currentVoice];
+                overLayPanel.SetActive(true);
+            }
+
+        }
+        else
+        {
+            overLayPanel.SetActive(false);
         }
 
 
@@ -137,6 +153,8 @@ public class UI : MonoBehaviour
         controlPanel.SetActive(true);
         controlTimer = 20f;
         AudioManager.SoundsEventTrigger(SoundEvents.StartingGame);
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
 
     }
     public void OptionsButton()
@@ -177,11 +195,15 @@ public class UI : MonoBehaviour
     {
         gameOverPanel.SetActive(true);
         AudioManager.SoundsEventTrigger(SoundEvents.PassesOut);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
     public void Win()
     {
         winPanel.SetActive(true);
         AudioManager.SoundsEventTrigger(SoundEvents.Success);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void Music()

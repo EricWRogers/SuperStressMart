@@ -74,9 +74,19 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   pillsText: {fileID: 0}
+  battervalue: 1
   gameOverPanel: {fileID: 0}
   winPanel: {fileID: 0}
   overlayPanel: {fileID: 0}
+  overLayPanel: {fileID: 0}
+  playerColors:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0.6745098, b: 0.94509804, a: 1}
+  - {r: 1, g: 0.60947335, b: 0.07075471, a: 1}
+  - {r: 0.7075472, g: 0, b: 0, a: 1}
+  - {r: 0.30676818, g: 0.2783019, b: 1, a: 1}
+  - {r: 0.9933473, g: 1, b: 0.16509432, a: 1}
+  - {r: 0.60534495, g: 0.1579299, b: 0.8584906, a: 1}
 --- !u!82 &7831590107281310180
 AudioSource:
   m_ObjectHideFlags: 0

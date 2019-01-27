@@ -132,18 +132,10 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, startingGameClips.Count);
         if (!startingGameClips[randomInt].hasPlayed)
         {
+            startingGameClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = startingGameClips[randomInt].audio;
             voicesSource.Play();
             startingGameClips[randomInt].hasPlayed = true;
-        }
-    }
-    private void NPCTalking()
-    {
-        int randomInt = Random.Range(0, startingGameClips.Count);
-        if (!startingGameClips[randomInt].hasPlayed)
-        {
-            voicesSource.clip = startingGameClips[randomInt].audio;
-            voicesSource.Play();
         }
     }
 
@@ -152,6 +144,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, npcTalkingToEmilyClips.Count);
         if (!npcTalkingToEmilyClips[randomInt].hasPlayed)
         {
+            npcTalkingToEmilyClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = npcTalkingToEmilyClips[randomInt].audio;
             voicesSource.Play();
             npcTalkingToEmilyClips[randomInt].hasPlayed = true;
@@ -162,6 +155,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, pickingUpItemClips.Count);
         if (!pickingUpItemClips[randomInt].hasPlayed)
         {
+            pickingUpItemClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = pickingUpItemClips[randomInt].audio;
             voicesSource.Play();
             pickingUpItemClips[randomInt].hasPlayed = true;
@@ -172,6 +166,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, hidesInBathroomClips.Count);
         if (!hidesInBathroomClips[randomInt].hasPlayed)
         {
+            hidesInBathroomClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = hidesInBathroomClips[randomInt].audio;
             voicesSource.Play();
             hidesInBathroomClips[randomInt].hasPlayed = true;
@@ -182,6 +177,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, pathBlockedClips.Count);
         if (!pathBlockedClips[randomInt].hasPlayed)
         {
+            pathBlockedClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = pathBlockedClips[randomInt].audio;
             voicesSource.Play();
             pathBlockedClips[randomInt].hasPlayed = true;
@@ -192,6 +188,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, anxietyLaxClips.Count);
         if (!anxietyLaxClips[randomInt].hasPlayed)
         {
+            anxietyLaxClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = anxietyLaxClips[randomInt].audio;
             voicesSource.Play();
             anxietyLaxClips[randomInt].hasPlayed = true;
@@ -202,6 +199,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, npcStandingBetweenClips.Count);
         if (!npcStandingBetweenClips[randomInt].hasPlayed)
         {
+            npcStandingBetweenClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = npcStandingBetweenClips[randomInt].audio;
             voicesSource.Play();
             npcStandingBetweenClips[randomInt].hasPlayed = true;
@@ -212,6 +210,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, fireAlarmClips.Count);
         if (!fireAlarmClips[randomInt].hasPlayed)
         {
+            fireAlarmClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = fireAlarmClips[randomInt].audio;
             voicesSource.Play();
             fireAlarmClips[randomInt].hasPlayed = true;
@@ -222,6 +221,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, successClips.Count);
         if (!successClips[randomInt].hasPlayed)
         {
+            successClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = successClips[randomInt].audio;
             voicesSource.Play();
             successClips[randomInt].hasPlayed = true;
@@ -232,6 +232,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, passesOutClips.Count);
         if (!passesOutClips[randomInt].hasPlayed)
         {
+            passesOutClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = passesOutClips[randomInt].audio;
             voicesSource.Play();
             passesOutClips[randomInt].hasPlayed = true;
@@ -242,6 +243,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, argumentBreaksOutClips.Count);
         if (!argumentBreaksOutClips[randomInt].hasPlayed)
         {
+            argumentBreaksOutClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = argumentBreaksOutClips[randomInt].audio;
             voicesSource.Play();
             argumentBreaksOutClips[randomInt].hasPlayed = true;
@@ -252,6 +254,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, cardDeclinedClips.Count);
         if (!cardDeclinedClips[randomInt].hasPlayed)
         {
+            cardDeclinedClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = cardDeclinedClips[randomInt].audio;
             voicesSource.Play();
             cardDeclinedClips[randomInt].hasPlayed = true;
@@ -262,6 +265,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, highAnxietyClips.Count);
         if (!highAnxietyClips[randomInt].hasPlayed)
         {
+            highAnxietyClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = highAnxietyClips[randomInt].audio;
             voicesSource.Play();
             highAnxietyClips[randomInt].hasPlayed = true;
@@ -272,6 +276,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, checkingOutClips.Count);
         if (!checkingOutClips[randomInt].hasPlayed)
         {
+            checkingOutClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = checkingOutClips[randomInt].audio;
             voicesSource.Play();
             checkingOutClips[randomInt].hasPlayed = true;
@@ -282,6 +287,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, seeingExClips.Count);
         if (!seeingExClips[randomInt].hasPlayed)
         {
+            seeingExClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = seeingExClips[randomInt].audio;
             voicesSource.Play();
             seeingExClips[randomInt].hasPlayed = true;
@@ -292,6 +298,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, shelfFallsClips.Count);
         if (!shelfFallsClips[randomInt].hasPlayed)
         {
+            shelfFallsClips[randomInt].playerVoice = currentVoice;
             voicesSource.clip = shelfFallsClips[randomInt].audio;
             voicesSource.Play();
             shelfFallsClips[randomInt].hasPlayed = true;
@@ -302,6 +309,7 @@ public class AudioManager : MonoBehaviour
         int randomInt = Random.Range(0, phoneMusicClips.Count);
         if (!phoneMusicClips[randomInt].hasPlayed)
         {
+            phoneMusicClips[randomInt].playerVoice = currentVoice;
             backGroudSource.clip = phoneMusicClips[randomInt].audio;
             backGroudSource.Play();
             phoneMusicClips[randomInt].hasPlayed = true;
@@ -309,12 +317,13 @@ public class AudioManager : MonoBehaviour
     }
     private void BackGroundMusic()
     {
-        int randomInt = Random.Range(0, phoneMusicClips.Count);
-        if (!phoneMusicClips[randomInt].hasPlayed)
+        int randomInt = Random.Range(0, backGroundClips.Count);
+        if (!backGroundClips[randomInt].hasPlayed)
         {
-            backGroudSource.clip = phoneMusicClips[randomInt].audio;
+            backGroundClips[randomInt].playerVoice = currentVoice;
+            backGroudSource.clip = backGroundClips[randomInt].audio;
             backGroudSource.Play();
-            phoneMusicClips[randomInt].hasPlayed = true;
+            backGroundClips[randomInt].hasPlayed = true;
         }
     }
 }
