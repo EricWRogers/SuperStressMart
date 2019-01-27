@@ -8,7 +8,7 @@ public class CustomerController : MonoBehaviour
     public float lookRadius = 3f;
     public float numberOfIdems = 0.0f;
     public float MaxNumberOfIdems;
-    public float targetTime;
+    float targetTime;
     GameManager GameManager;
     bool end = false;
     private bool wait = false;
@@ -29,7 +29,7 @@ public class CustomerController : MonoBehaviour
 
         anim.SetBool("Walking", true);
 
-        GameManager.AICount++;
+        GameManager.coustomerAI++;
     }
 
     void FixedUpdate()
@@ -43,17 +43,24 @@ public class CustomerController : MonoBehaviour
             if(distance <= lookRadius)
             {
                 anim.SetBool("Walking", false);
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y + point.GetComponent<WayPointManager>().turn, transform.rotation.eulerAngles.z);
+
+                transform.rotation = point.transform.rotation;
+   
                 anim.SetBool("Swipe", true);
                 waitTimer();
 
-                if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Swipe") && wait)
+                if(wait)
                 {
                     anim.SetBool("Swipe", false);
                     anim.SetBool("Walking", true);
-                    point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
-                    numberOfIdems++;
-                    wait = false;
+
+                    if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Swipe"))
+                    {
+                        point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
+                        numberOfIdems++;
+                        wait = false;
+                    
+                    }
                 }
             }
         }
@@ -81,7 +88,7 @@ public class CustomerController : MonoBehaviour
             if(distance <= lookRadius)
             {
                 Destroy(gameObject);
-                GameManager.AICount--;
+                GameManager.coustomerAI--;
             }
        }
     }
@@ -118,7 +125,7 @@ public class CustomerController : MonoBehaviour
         
         if (targetTime <= 0.0f)
         {
-            targetTime = Random.Range(3,5);
+            targetTime = Random.Range(2,3);
             wait = true;
         }
     }

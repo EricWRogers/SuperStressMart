@@ -9,11 +9,14 @@ public class GameManager : MonoBehaviour
     public GameObject[] CheckStand;
     public GameObject enter;
     public GameObject exit;
-
+    public bool spawn;
     public GameObject Coustomer;
-
-    public float maxAI = 10f;
-    public float AICount= 0f;
+    public GameObject Employee;
+    public float spawnTime = 3f;
+    public float maxCoustomerAI = 10f;
+    public float coustomerAI= 0f;
+    public float maxEmployeeAI = 10f;
+    public float EmployeeAI= 0f;
     // Start is called before the first frame update
     void Awake()
     {
@@ -25,17 +28,34 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-
+        waitTimer();
     }
     void FixedUpdate()
     {
-        if(AICount == maxAI)
+        if(coustomerAI == maxCoustomerAI)
         {
-            maxAI = Random.Range(10,14);
+            maxCoustomerAI = Random.Range(10,14);
+            spawn = false;
             
-        } else if(AICount < maxAI)
+        } else if(coustomerAI < maxCoustomerAI && spawn)
         {
             //Instantiate(Coustomer,enter.transform);
+            spawn = false;
         }
+    }
+
+    void waitTimer()
+    {
+        if(coustomerAI <= maxCoustomerAI)
+        {
+            spawnTime -= Time.deltaTime;
+        
+            if (spawnTime <= 0.0f)
+            {
+                spawnTime = Random.Range(3,5);
+                spawn = true;
+            }
+        }
+
     }
 }
