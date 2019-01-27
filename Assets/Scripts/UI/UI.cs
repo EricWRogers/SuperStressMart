@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UI : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class UI : MonoBehaviour
     private float controlTimer = 0f;
     private float pillTimer = 0f;
     private float batteryTimer = 0f;
+    public float battervalue = 1f;
 
     //GameOver
     public GameObject gameOverPanel;
@@ -59,10 +61,6 @@ public class UI : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OpenList();
-        }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             OpenControl();
@@ -93,6 +91,12 @@ public class UI : MonoBehaviour
         {
             pillTimer -= Time.deltaTime;
             GameManager.ChangeStress(-.1f);
+        }
+        if (AudioManager.backGroudSource.isPlaying)
+        {
+            battervalue -= .01f;
+            batteryMeter.fillAmount = battervalue;
+            GameManager.ChangeStress(-.02f);
         }
     }
 
@@ -174,11 +178,17 @@ public class UI : MonoBehaviour
         gameOverPanel.SetActive(true);
         AudioManager.SoundsEventTrigger(SoundEvents.PassesOut);
     }
+    public void Win()
+    {
+        winPanel.SetActive(true);
+        AudioManager.SoundsEventTrigger(SoundEvents.Success);
+    }
 
     public void Music()
     {
         if (playMusic == 0)
         {
+            AudioManager.SoundsEventTrigger(SoundEvents.PhoneMusic);
             battery.SetActive(true);
             playMusic = 1;
         }
@@ -194,6 +204,10 @@ public class UI : MonoBehaviour
         pillsText.text = "" + pills;
         AudioManager.SoundsEventTrigger(SoundEvents.AnxietyLax);
         pillTimer = 10f;
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(1);
     }
 
 }

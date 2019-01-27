@@ -85,25 +85,7 @@ MonoBehaviour:
   - playerVoice: 3
     audio: {fileID: 8300000, guid: c3ae5e0ce13344c6b9b3a83a35c46dea, type: 3}
     hasPlayed: 0
-  npcTalkingToEmilyClips:
-  - playerVoice: 2
-    audio: {fileID: 8300000, guid: 6b7bb0b5ab90e404f98312fd43d7ca80, type: 3}
-    hasPlayed: 0
-  - playerVoice: 6
-    audio: {fileID: 8300000, guid: cc27d7a2ca0394e5d8ee08efc95c81ec, type: 3}
-    hasPlayed: 0
-  - playerVoice: 4
-    audio: {fileID: 8300000, guid: 1f1777d3f3bff4416ba1554df3cd7c3a, type: 3}
-    hasPlayed: 0
-  - playerVoice: 1
-    audio: {fileID: 8300000, guid: 4ea0395cc226b46d8a889a102521b5e2, type: 3}
-    hasPlayed: 0
-  - playerVoice: 5
-    audio: {fileID: 8300000, guid: 6a52ea578ff6044babc1995588cdf6b4, type: 3}
-    hasPlayed: 0
-  - playerVoice: 3
-    audio: {fileID: 8300000, guid: 91ea5230c84b24b6bafe20cc4fc5a1c3, type: 3}
-    hasPlayed: 0
+  npcTalkingToEmilyClips: []
   pickingUpItemClips:
   - playerVoice: 2
     audio: {fileID: 8300000, guid: e4714469a24cb4f669af7cf32c45300e, type: 3}
@@ -185,6 +167,36 @@ MonoBehaviour:
   - playerVoice: 3
     audio: {fileID: 8300000, guid: 7f6984f863fbb4132824d77b66136960, type: 3}
     hasPlayed: 0
+  - playerVoice: 2
+    audio: {fileID: 8300000, guid: edf856d1d80d14a3c9c44470f9c0c87a, type: 3}
+    hasPlayed: 0
+  - playerVoice: 6
+    audio: {fileID: 8300000, guid: 33b27a8fc603a43c89a57b9587e39e3e, type: 3}
+    hasPlayed: 0
+  - playerVoice: 4
+    audio: {fileID: 8300000, guid: d70411d61dd5e4844b5451a72c5946e0, type: 3}
+    hasPlayed: 0
+  - playerVoice: 3
+    audio: {fileID: 8300000, guid: 310fb2ba24f294a39a1f5c7b852f9c22, type: 3}
+    hasPlayed: 0
+  - playerVoice: 2
+    audio: {fileID: 8300000, guid: 6b7bb0b5ab90e404f98312fd43d7ca80, type: 3}
+    hasPlayed: 0
+  - playerVoice: 6
+    audio: {fileID: 8300000, guid: cc27d7a2ca0394e5d8ee08efc95c81ec, type: 3}
+    hasPlayed: 0
+  - playerVoice: 4
+    audio: {fileID: 8300000, guid: 1f1777d3f3bff4416ba1554df3cd7c3a, type: 3}
+    hasPlayed: 0
+  - playerVoice: 1
+    audio: {fileID: 8300000, guid: 4ea0395cc226b46d8a889a102521b5e2, type: 3}
+    hasPlayed: 0
+  - playerVoice: 5
+    audio: {fileID: 8300000, guid: 6a52ea578ff6044babc1995588cdf6b4, type: 3}
+    hasPlayed: 0
+  - playerVoice: 3
+    audio: {fileID: 8300000, guid: 91ea5230c84b24b6bafe20cc4fc5a1c3, type: 3}
+    hasPlayed: 0
   anxietyLaxClips:
   - playerVoice: 2
     audio: {fileID: 8300000, guid: e431e08b512104b0a947e7af252969e1, type: 3}
@@ -204,19 +216,7 @@ MonoBehaviour:
   - playerVoice: 3
     audio: {fileID: 8300000, guid: 7b81f6783dc0e412abc440ab59241c62, type: 3}
     hasPlayed: 0
-  npcStandingBetweenClips:
-  - playerVoice: 2
-    audio: {fileID: 8300000, guid: edf856d1d80d14a3c9c44470f9c0c87a, type: 3}
-    hasPlayed: 0
-  - playerVoice: 6
-    audio: {fileID: 8300000, guid: 33b27a8fc603a43c89a57b9587e39e3e, type: 3}
-    hasPlayed: 0
-  - playerVoice: 4
-    audio: {fileID: 8300000, guid: d70411d61dd5e4844b5451a72c5946e0, type: 3}
-    hasPlayed: 0
-  - playerVoice: 3
-    audio: {fileID: 8300000, guid: 310fb2ba24f294a39a1f5c7b852f9c22, type: 3}
-    hasPlayed: 0
+  npcStandingBetweenClips: []
   fireAlarmClips:
   - playerVoice: 2
     audio: {fileID: 8300000, guid: b706719a837b04590bd1c711d22d75f0, type: 3}
