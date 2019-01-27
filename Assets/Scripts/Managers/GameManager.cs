@@ -9,11 +9,12 @@ public class GameManager : MonoBehaviour
     public GameObject[] CheckStand;
     public GameObject enter;
     public GameObject exit;
-    public bool spawn;
-    public GameObject Coustomer;
-    public GameObject Employee;
-    public float spawnTime = 3f;
-    public float maxCoustomerAI = 10f;
+    private bool spawn;
+    public bool isChasing;
+    private GameObject Coustomer;
+    private GameObject Employee;
+    private float spawnTime = 3f;
+    private float maxCoustomerAI = 10f;
     public float coustomerAI= 0f;
     
     // Start is called before the first frame update
