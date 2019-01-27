@@ -184,7 +184,7 @@ public class CustomerController : MonoBehaviour
         {
             Debug.Log("PLAY");
             AudioManager.SoundsEventTrigger(SoundEvents.PathBlocked);
-            GameManager.StressBar = 0.5f;
+            GameManager.StressBar = 0.2f;
             GameManager.Chasing(false);
             seenPlayer = true;
         }
