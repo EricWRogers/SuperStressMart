@@ -133,6 +133,7 @@ public class EmployeeController : MonoBehaviour
         else
         {
             AudioManager.SoundsEventTrigger(SoundEvents.PathBlocked);
+            GameManager.ChangeStress(10f);
             GameManager.Chasing(false);
             seenPlayer = true;
         }

@@ -37,13 +37,12 @@ public class CustomerController : MonoBehaviour
 
         anim.SetBool("Walking", true);
 
-        GameManager.coustomerAI++;
+        GameManager.coustomerAI += 1f;
     }
 
     void FixedUpdate()
     {
-        seenPlayer = true;
-         if(!seenPlayer)
+        if(!seenPlayer)
         {
             RaycastHit hit;
 
@@ -183,11 +182,20 @@ public class CustomerController : MonoBehaviour
         }
         else
         {
-            AudioManager.SoundsEventTrigger(SoundEvents.NPCTalkingToEmily);
+            Debug.Log("PLAY");
+            AudioManager.SoundsEventTrigger(SoundEvents.PathBlocked);
             GameManager.Chasing(false);
             seenPlayer = true;
         }
     }
+
+IEnumerator GiveUp(float time)
+ {
+     yield return new WaitForSeconds(time);
+ 
+     seenPlayer = false;
+
+ }
     
     void FaceTarget()
     {

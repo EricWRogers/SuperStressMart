@@ -12,11 +12,11 @@ public class GameManager : MonoBehaviour
     public GameObject exit;
     private bool spawn;
     public bool isChasing = false;
-    private GameObject Coustomer;
+    public GameObject Coustomer;
     private GameObject Employee;
     private float spawnTime = 3f;
-    private float maxCoustomerAI = 10f;
-    public float coustomerAI= 0f;
+    public float maxCoustomerAI = 30.0f;
+    public float coustomerAI;
     public float fireTimeLeft = 60.0f;
     public float StressBar = 0.0f;
     
