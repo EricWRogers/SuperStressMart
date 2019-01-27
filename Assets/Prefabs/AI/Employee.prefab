@@ -249,8 +249,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookRadius: 0.4
   workArea: 1
-  serchLeangth: 0
-  audioLeangth: 0
+  serchLeangth: 50
+  audioLeangth: 100
   numberOfIdems: 0
   MaxNumberOfIdems: 0
   giveupTime: 0
