@@ -155,7 +155,6 @@ public class EmployeeController : MonoBehaviour
                 }
             }
         }
-        Debug.Log(GameManager.RoomGOS[index].GetComponent<WayPointManager>().RoomName);
     }
 
     IEnumerator GiveUp(float time)

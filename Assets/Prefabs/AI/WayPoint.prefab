@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5372740527215616126}
   m_Layer: 0
   m_Name: WayPoint
-  m_TagString: WayPoint
+  m_TagString: CheckStand
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,4 +90,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49dbec449098e4f678356c732722a279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomName: 
+  RoomName: Checkout 1
+  available: 1
