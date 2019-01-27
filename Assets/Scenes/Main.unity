@@ -689,81 +689,6 @@ PrefabInstance:
       propertyPath: backGroudSource
       value: 
       objectReference: {fileID: 3638980409353313940}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: startingGameClips.Array.data[0].playerVoice
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: startingGameClips.Array.data[1].playerVoice
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: startingGameClips.Array.data[2].playerVoice
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: startingGameClips.Array.data[3].playerVoice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: startingGameClips.Array.data[4].playerVoice
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: startingGameClips.Array.data[5].playerVoice
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: npcTalkingToEmilyClips.Array.data[0].playerVoice
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: npcTalkingToEmilyClips.Array.data[1].playerVoice
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: npcTalkingToEmilyClips.Array.data[2].playerVoice
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: npcTalkingToEmilyClips.Array.data[3].playerVoice
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: npcTalkingToEmilyClips.Array.data[4].playerVoice
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: npcTalkingToEmilyClips.Array.data[5].playerVoice
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: pickingUpItemClips.Array.data[0].playerVoice
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: pickingUpItemClips.Array.data[1].playerVoice
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5867110706873250057, guid: 791453cf12ade1345bbbdf2e51b29f52,
-        type: 3}
-      propertyPath: pickingUpItemClips.Array.data[2].playerVoice
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 791453cf12ade1345bbbdf2e51b29f52, type: 3}
 --- !u!114 &2050483949322209558 stripped
@@ -1165,33 +1090,12 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7760973658371880576, guid: 8f4f23bbde775463491dc588de695808,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 78.399994
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351774467, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1351774467, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1688905942, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1688905942, guid: 8f4f23bbde775463491dc588de695808, type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3699425694859356769, guid: 8f4f23bbde775463491dc588de695808,
+    - target: {fileID: 1472514155169459150, guid: 8f4f23bbde775463491dc588de695808,
         type: 3}
       propertyPath: m_havePropertiesChanged
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3699425694859356769, guid: 8f4f23bbde775463491dc588de695808,
+    - target: {fileID: 1472514155169459150, guid: 8f4f23bbde775463491dc588de695808,
         type: 3}
       propertyPath: m_isInputParsingRequired
       value: 1

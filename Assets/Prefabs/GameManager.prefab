@@ -67,349 +67,338 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingGameClips:
-  - sounds: 0
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 0fce07ee68e3544e08c16e9dd04864b0, type: 3}
     hasPlayed: 0
-  - sounds: 0
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 93d9d27d2367e4460828b803a1b2dcde, type: 3}
     hasPlayed: 0
-  - sounds: 0
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 4e7f22a0e384f47df9c1540c7d6c9312, type: 3}
     hasPlayed: 0
-  - sounds: 0
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: b89caad2ea2df42649d5cc79490e137c, type: 3}
     hasPlayed: 0
-  - sounds: 0
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: ab9c88deaf58941c39e0886f2cec2423, type: 3}
     hasPlayed: 0
-  - sounds: 0
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: c3ae5e0ce13344c6b9b3a83a35c46dea, type: 3}
     hasPlayed: 0
   npcTalkingToEmilyClips:
-  - sounds: 2
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 6b7bb0b5ab90e404f98312fd43d7ca80, type: 3}
     hasPlayed: 0
-  - sounds: 2
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: cc27d7a2ca0394e5d8ee08efc95c81ec, type: 3}
     hasPlayed: 0
-  - sounds: 2
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 1f1777d3f3bff4416ba1554df3cd7c3a, type: 3}
     hasPlayed: 0
-  - sounds: 2
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 4ea0395cc226b46d8a889a102521b5e2, type: 3}
     hasPlayed: 0
-  - sounds: 2
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 6a52ea578ff6044babc1995588cdf6b4, type: 3}
     hasPlayed: 0
-  - sounds: 2
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 91ea5230c84b24b6bafe20cc4fc5a1c3, type: 3}
     hasPlayed: 0
   pickingUpItemClips:
-  - sounds: 3
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: e4714469a24cb4f669af7cf32c45300e, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 6625d81d6ed874ffe8cbdfa438d66103, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 345dc426711cc478a9922036bf4b1d31, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: a6629cb6575934c17b3c7c61d6e7a84d, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 0f7b96e0417e7484086c6e9400e9c1c5, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 55a57fcd923c04a5f8f412f627148fff, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 01d1431c539f74a868e05cc0248cb84c, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: bf8faaef157594bcaaa3380662571704, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 0031b3464fded4d2ca4e563ad8268925, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: e684200b754d04d778dad7cced511139, type: 3}
     hasPlayed: 0
-  - sounds: 3
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: ea5870fceba654300b284736f8a199b2, type: 3}
     hasPlayed: 0
-  - sounds: 3
-    audio: {fileID: 0}
-    hasPlayed: 0
   hidesInBathroomClips:
-  - sounds: 4
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: f957e8fdd166345ce8d72ad0cd05b6a4, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 663bdc58493694394ac52bf325556ecd, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: a0cbf03de0b764354b31c27860ccbeff, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 7
     audio: {fileID: 8300000, guid: 4f19fc0998e924135a4ee418e485fec4, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: dfde89d77269a4241acd1ba6e5fdd7d3, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 7d5156f83676b4423be800ce233a8105, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 35508b14b0f8946d99991838dbdf81c2, type: 3}
     hasPlayed: 0
-  - sounds: 4
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 83cb959e2461a428dabb9903c5971431, type: 3}
     hasPlayed: 0
   pathBlockedClips:
-  - sounds: 5
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 0dc11d4c64ee142c49ee2ec28af8478a, type: 3}
     hasPlayed: 0
-  - sounds: 5
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 36c790c8870214bcb854c621d5a62a48, type: 3}
     hasPlayed: 0
-  - sounds: 5
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: a7331ff02ae564aa98fd3a61a9a645cd, type: 3}
     hasPlayed: 0
-  - sounds: 5
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: b087e6e88143d46329d657ae7d441d5e, type: 3}
     hasPlayed: 0
-  - sounds: 5
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 03bdeddcb5bc941848020d1ade79ad8b, type: 3}
     hasPlayed: 0
-  - sounds: 5
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: f8a64c889976e4cc48852804ad8d36a5, type: 3}
     hasPlayed: 0
-  - sounds: 5
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 7f6984f863fbb4132824d77b66136960, type: 3}
     hasPlayed: 0
-  - sounds: 5
-    audio: {fileID: 0}
-    hasPlayed: 0
   anxietyLaxClips:
-  - sounds: 6
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: e431e08b512104b0a947e7af252969e1, type: 3}
     hasPlayed: 0
-  - sounds: 6
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 7217e6c0b175b4971ae9abfde5f546b8, type: 3}
     hasPlayed: 0
-  - sounds: 6
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: aa1139c96b1324287b28e3232ace38d2, type: 3}
     hasPlayed: 0
-  - sounds: 6
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 99df1a73e6f714447a6f88c61a8f08c5, type: 3}
     hasPlayed: 0
-  - sounds: 6
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: bbc1ece00059a401bacb871036a6743f, type: 3}
     hasPlayed: 0
-  - sounds: 6
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 7b81f6783dc0e412abc440ab59241c62, type: 3}
     hasPlayed: 0
   npcStandingBetweenClips:
-  - sounds: 7
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: edf856d1d80d14a3c9c44470f9c0c87a, type: 3}
     hasPlayed: 0
-  - sounds: 7
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 33b27a8fc603a43c89a57b9587e39e3e, type: 3}
     hasPlayed: 0
-  - sounds: 7
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: d70411d61dd5e4844b5451a72c5946e0, type: 3}
     hasPlayed: 0
-  - sounds: 7
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 310fb2ba24f294a39a1f5c7b852f9c22, type: 3}
     hasPlayed: 0
-  - sounds: 7
-    audio: {fileID: 0}
-    hasPlayed: 0
-  - sounds: 7
-    audio: {fileID: 0}
-    hasPlayed: 0
   fireAlarmClips:
-  - sounds: 8
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: b706719a837b04590bd1c711d22d75f0, type: 3}
     hasPlayed: 0
-  - sounds: 8
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: dec67128f1e04498dadad73531752447, type: 3}
     hasPlayed: 0
-  - sounds: 8
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 23b770a365c4443d6834d3657ede21bb, type: 3}
     hasPlayed: 0
-  - sounds: 8
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: e9cb1f768353c4f5e8ff63cd0a442d4c, type: 3}
     hasPlayed: 0
-  - sounds: 8
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 279b637a0faf240a3a1492cc4eea6663, type: 3}
     hasPlayed: 0
-  - sounds: 8
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: fb41c9bae462c48a7aec847ef1de99b9, type: 3}
     hasPlayed: 0
   successClips:
-  - sounds: 9
+  - playerVoice: 7
     audio: {fileID: 8300000, guid: a4323d356a48b49269e121188409445d, type: 3}
     hasPlayed: 0
   passesOutClips:
-  - sounds: 10
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: eddacd4daaf5940feb25ba7d1c5fa130, type: 3}
     hasPlayed: 0
-  - sounds: 10
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 96bf8e721d78948428fe377cea1c8fdc, type: 3}
     hasPlayed: 0
-  - sounds: 10
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 4d0521c9de6a84084938df33087aeb0d, type: 3}
     hasPlayed: 0
-  - sounds: 10
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: affb1c4837a2f4cb29b680e91ece1ada, type: 3}
     hasPlayed: 0
-  - sounds: 10
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 69e0587e5d72a40b4a84de2112f764d5, type: 3}
     hasPlayed: 0
-  - sounds: 10
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: f6025598f5cc5439fb1432730645355a, type: 3}
     hasPlayed: 0
   argumentBreaksOutClips:
-  - sounds: 11
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 26754ad27cc404a169ac3acff9f665e6, type: 3}
     hasPlayed: 0
-  - sounds: 11
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: c9b65087c2aa84e1586d5b180a117393, type: 3}
     hasPlayed: 0
-  - sounds: 11
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 1e276ccec5a2d4b09b131ad68de055bc, type: 3}
     hasPlayed: 0
-  - sounds: 11
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 0487e1d3c5eec4267a7d5155af08ac2b, type: 3}
     hasPlayed: 0
-  - sounds: 11
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: c15ac0f77678b4b0f9fb3494c70b531c, type: 3}
     hasPlayed: 0
-  - sounds: 11
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: d18c543e35bb74436a76349722eb3263, type: 3}
     hasPlayed: 0
   cardDeclinedClips:
-  - sounds: 12
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 8ab62b76e106447ccaa4190014f62333, type: 3}
     hasPlayed: 0
-  - sounds: 12
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 80df6207be2f7468b85c27dd343f07f8, type: 3}
     hasPlayed: 0
-  - sounds: 12
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 5e6dedec6e7164c0da55497ed21ee5b0, type: 3}
     hasPlayed: 0
-  - sounds: 12
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 92a96097f8cf34a1db0fb2eb2e872b53, type: 3}
     hasPlayed: 0
-  - sounds: 12
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 152a09137268840328bc54c2796a7f64, type: 3}
     hasPlayed: 0
-  - sounds: 12
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 590467ad94dd1411bb9865a9089ed426, type: 3}
     hasPlayed: 0
   highAnxietyClips:
-  - sounds: 13
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 013f1855e0ca34fd2b3ce302a185b073, type: 3}
     hasPlayed: 0
-  - sounds: 13
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 1d943a1214b0646b69ccc7a944b9519d, type: 3}
     hasPlayed: 0
-  - sounds: 13
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: fe9f7403cc49d45308e6d582193ba87a, type: 3}
     hasPlayed: 0
-  - sounds: 13
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 8fa19d5bc5bcf4439b0472812b46fa9b, type: 3}
     hasPlayed: 0
-  - sounds: 13
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: f3129ebea9d76434fb508168ac7d85d0, type: 3}
     hasPlayed: 0
-  - sounds: 13
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 53804b7ec0edb4d098192502abee6131, type: 3}
     hasPlayed: 0
   checkingOutClips:
-  - sounds: 14
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 48a3dd83e91094c44b4e495c39985750, type: 3}
     hasPlayed: 0
-  - sounds: 14
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 967a73c57c30d49a3b668fd5a3df7b3e, type: 3}
     hasPlayed: 0
-  - sounds: 14
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 83e4ecc6d227d440695e03cf86d66e68, type: 3}
     hasPlayed: 0
-  - sounds: 14
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: e0f526d6722954aa4aa2e0ce961d9ab5, type: 3}
     hasPlayed: 0
-  - sounds: 14
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: 088efed86c74543939410714bd905668, type: 3}
     hasPlayed: 0
-  - sounds: 14
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 6ba2eea5727ca4367b68fd7f140a11dc, type: 3}
     hasPlayed: 0
   seeingExClips:
-  - sounds: 15
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: 1bf5a08d113a74464973cd304656fb0a, type: 3}
     hasPlayed: 0
-  - sounds: 15
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 26a16d456e65c4165a8a17dc44e8607c, type: 3}
     hasPlayed: 0
-  - sounds: 15
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: 7e792277a82e44765965a157eac15db0, type: 3}
     hasPlayed: 0
-  - sounds: 15
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 6234173205b614797a0589571d175387, type: 3}
     hasPlayed: 0
-  - sounds: 15
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: f2c03b12240574a808ed1675dfcde10c, type: 3}
     hasPlayed: 0
-  - sounds: 15
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: f513c6e71e57b4cca9d5aa31e2795f5b, type: 3}
     hasPlayed: 0
   shelfFallsClips:
-  - sounds: 16
+  - playerVoice: 2
     audio: {fileID: 8300000, guid: a779d14a62bcc4e2f86c5f647df59ec3, type: 3}
     hasPlayed: 0
-  - sounds: 16
+  - playerVoice: 6
     audio: {fileID: 8300000, guid: 95c5d5bb3c3e04d739a2a82537b9ca84, type: 3}
     hasPlayed: 0
-  - sounds: 16
+  - playerVoice: 4
     audio: {fileID: 8300000, guid: fd0e07237cabf428cbdcff83128f56bd, type: 3}
     hasPlayed: 0
-  - sounds: 16
+  - playerVoice: 1
     audio: {fileID: 8300000, guid: 239abed049414420f99a9b4bb0b6b595, type: 3}
     hasPlayed: 0
-  - sounds: 16
+  - playerVoice: 5
     audio: {fileID: 8300000, guid: d3318a5e3c479447a8b768678e1b0312, type: 3}
     hasPlayed: 0
-  - sounds: 16
+  - playerVoice: 3
     audio: {fileID: 8300000, guid: 5444a75b296fa4720ac68c6d0907707b, type: 3}
     hasPlayed: 0
   phoneMusicClips:
-  - sounds: 17
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: 4f84566475b5046c7a9a0d9a494feb11, type: 3}
     hasPlayed: 0
-  - sounds: 17
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: 68ddb47ed0cc5479793a02c446a66ae7, type: 3}
     hasPlayed: 0
-  - sounds: 17
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: 4fde15b8885a8442fad2b5dc02ca0ba5, type: 3}
     hasPlayed: 0
   backGroundClips:
-  - sounds: 18
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: 973e8d82cf58d42a28dacb2941038066, type: 3}
     hasPlayed: 0
-  - sounds: 18
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: 9a34c329f34bf4e7ea8e5529f3f7b589, type: 3}
     hasPlayed: 0
-  - sounds: 18
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: f726aaeea2fd743b58a92c15c6650a79, type: 3}
     hasPlayed: 0
-  - sounds: 18
+  - playerVoice: 0
     audio: {fileID: 8300000, guid: 60af77ac48015447fa8bd7b50e70a089, type: 3}
     hasPlayed: 0
   backGroudSource: {fileID: 0}
   voicesSource: {fileID: 6339472363672771361}
+  currentVoice: 0
 --- !u!82 &6339472363672771361
 AudioSource:
   m_ObjectHideFlags: 0
