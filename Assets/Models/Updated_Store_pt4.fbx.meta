@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 3dfb23a01fdacf34bb1923f6e6bb900c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Aisle_Shelves1
+    100002: Bathroom_Door
+    100004: Bathroom_Light_Fixture
+    100006: Cashier_Desk1
+    100008: Couch
+    100010: Couch1
+    100012: Fridge_Door1
+    100014: Fridge_Freezer
+    100016: Front_Door_L
+    100018: Front_Door_R
+    100020: Fruit_Veggie_Display1
+    100022: Glass_Window1
+    100024: Glass_Window2
+    100026: Glass_Window3
+    100028: Glass_Window4
+    100030: Main_Light_Fixture1
+    100032: Main_Structure
+    100034: Sink
+    100036: Toilet
+    100038: //RootNode
+    400000: Aisle_Shelves1
+    400002: Bathroom_Door
+    400004: Bathroom_Light_Fixture
+    400006: Cashier_Desk1
+    400008: Couch
+    400010: Couch1
+    400012: Fridge_Door1
+    400014: Fridge_Freezer
+    400016: Front_Door_L
+    400018: Front_Door_R
+    400020: Fruit_Veggie_Display1
+    400022: Glass_Window1
+    400024: Glass_Window2
+    400026: Glass_Window3
+    400028: Glass_Window4
+    400030: Main_Light_Fixture1
+    400032: Main_Structure
+    400034: Sink
+    400036: Toilet
+    400038: //RootNode
+    2100000: OutsideWallsMat
+    2100002: lambert1
+    2100004: InsideWallsMat
+    2100006: BathroomwallMat
+    2100008: CeilingMat
+    2100010: roofMat
+    2100012: CheckoutLaneMat
+    2100014: ShelfMat
+    2100016: ToiletMat
+    2100018: SinkMat
+    2100020: GlassMat1
+    2100022: FDoorMat
+    2100024: BathroomDoorMat
+    2100026: TubeLightFixtureMat
+    2100028: TubeLightMat
+    2100030: BRoomLightFixture
+    2100032: FruitVegMat
+    2100034: freezerMst
+    2100036: FreezerDoorMat
+    2100038: CouchMat
+    2300000: Aisle_Shelves1
+    2300002: Bathroom_Door
+    2300004: Bathroom_Light_Fixture
+    2300006: Cashier_Desk1
+    2300008: Couch
+    2300010: Couch1
+    2300012: Fridge_Door1
+    2300014: Fridge_Freezer
+    2300016: Front_Door_L
+    2300018: Front_Door_R
+    2300020: Fruit_Veggie_Display1
+    2300022: Glass_Window1
+    2300024: Glass_Window2
+    2300026: Glass_Window3
+    2300028: Glass_Window4
+    2300030: Main_Light_Fixture1
+    2300032: Main_Structure
+    2300034: Sink
+    2300036: Toilet
+    3300000: Aisle_Shelves1
+    3300002: Bathroom_Door
+    3300004: Bathroom_Light_Fixture
+    3300006: Cashier_Desk1
+    3300008: Couch
+    3300010: Couch1
+    3300012: Fridge_Door1
+    3300014: Fridge_Freezer
+    3300016: Front_Door_L
+    3300018: Front_Door_R
+    3300020: Fruit_Veggie_Display1
+    3300022: Glass_Window1
+    3300024: Glass_Window2
+    3300026: Glass_Window3
+    3300028: Glass_Window4
+    3300030: Main_Light_Fixture1
+    3300032: Main_Structure
+    3300034: Sink
+    3300036: Toilet
+    4300000: Main_Structure
+    4300002: Cashier_Desk1
+    4300004: Aisle_Shelves1
+    4300006: Toilet
+    4300008: Sink
+    4300010: Glass_Window1
+    4300012: Glass_Window2
+    4300014: Glass_Window3
+    4300016: Glass_Window4
+    4300018: Front_Door_R
+    4300020: Front_Door_L
+    4300022: Bathroom_Door
+    4300024: Main_Light_Fixture1
+    4300026: Bathroom_Light_Fixture
+    4300028: Fruit_Veggie_Display1
+    4300030: Fridge_Freezer
+    4300032: Fridge_Door1
+    4300034: Couch
+    4300036: Couch1
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
