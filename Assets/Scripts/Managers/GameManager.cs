@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     private float spawnTime = 3f;
     private float maxCoustomerAI = 10f;
     public float coustomerAI= 0f;
+    public float fireTimeLeft = 60.0f;
+    public float StressBar = 0.0f;
     
     // Start is called before the first frame update
     void Awake()
@@ -29,6 +31,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         waitTimer();
+        fireTimer();
     }
     void FixedUpdate()
     {
@@ -57,9 +60,32 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+    void fireTimer()
+    {
+        if(fireTimeLeft > 0.0f)
+        {
+            fireTimeLeft -= Time.deltaTime;
+            if(fireTimeLeft <= 0.0f)
+            {
+                fireTimeLeft = Random.Range(90.0f,120.0f);
+            }
+        }
+    }
 
     public void Chasing(bool BoldHolder)
     {
         isChasing = BoldHolder;
+        if (BoldHolder)
+        {
+            PlayerGO.Speed = PlayerGO.OriginalSpeed * 2;
+        }
+        else
+        {
+            PlayerGO.Speed = PlayerGO.OriginalSpeed;
+        }
+    }
+    public void ChangeStress(float mod)
+    {
+        StressBar =+ mod;
     }
 }

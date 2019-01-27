@@ -5,12 +5,14 @@ using UnityEngine;
 public class ThirdPersonCharacterController : MonoBehaviour
 {
     public float Speed;
+    public float OriginalSpeed;
     Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        OriginalSpeed = Speed;
     }
 
     // Update is called once per frame
