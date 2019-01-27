@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public float StressBar = 0.0f;
     public GameObject PlayerGO;
     public GameObject[] RoomGOS;
     public GameObject[] CheckStand;
@@ -18,7 +19,8 @@ public class GameManager : MonoBehaviour
     public float maxCoustomerAI = 30.0f;
     public float coustomerAI;
     public float fireTimeLeft = 60.0f;
-    public float StressBar = 0.0f;
+    
+    AudioManager audio;
     
     // Start is called before the first frame update
     void Awake()
@@ -28,6 +30,7 @@ public class GameManager : MonoBehaviour
         CheckStand = GameObject.FindGameObjectsWithTag("CheckStand");
         enter = GameObject.FindGameObjectWithTag("Enter Door");
         exit = GameObject.FindGameObjectWithTag("Exit Door");
+        audio=this.GetComponent<AudioManager>();
     }
     void Update()
     {
@@ -68,6 +71,7 @@ public class GameManager : MonoBehaviour
             fireTimeLeft -= Time.deltaTime;
             if(fireTimeLeft <= 0.0f)
             {
+                audio.SoundsEventTrigger(SoundEvents.FireAlarm);
                 fireTimeLeft = UnityEngine.Random.Range(90.0f,120.0f);
             }
         }
@@ -88,6 +92,6 @@ public class GameManager : MonoBehaviour
 
     public void ChangeStress(float mod)
     {
-        StressBar =+ mod;
+        StressBar = StressBar + mod;
     }
 }
