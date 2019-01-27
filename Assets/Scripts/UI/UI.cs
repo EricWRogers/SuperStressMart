@@ -36,7 +36,7 @@ public class UI : MonoBehaviour
     private float controlTimer = 0f;
     private float pillTimer = 0f;
     private float batteryTimer = 0f;
-    public float battervalue = 1f;
+    public float battervalue = .5f;
 
     //GameOver
     public GameObject gameOverPanel;
@@ -60,6 +60,7 @@ public class UI : MonoBehaviour
         AudioManager = GameManager.GetComponent<AudioManager>();
         pills = 3;
         pillsText.text = "" + pills;
+        batteryMeter.fillAmount = .5f;
     }
 
     void Update()
@@ -84,7 +85,7 @@ public class UI : MonoBehaviour
                 controlPanel.SetActive(false);
             }
         }
-        if (AudioManager.backGroudSource.isPlaying || AudioManager.voicesSource.isPlaying)
+        if (AudioManager.voicesSource.isPlaying)
         {
             if (AudioManager.currentVoice>0) 
             {
@@ -114,9 +115,13 @@ public class UI : MonoBehaviour
         }
         if (AudioManager.backGroudSource.isPlaying)
         {
-            battervalue -= .01f;
+            battervalue -= .001f;
             batteryMeter.fillAmount = battervalue;
             GameManager.ChangeStress(-.02f);
+        }
+        else
+        {
+            battery.SetActive(false);
         }
     }
 

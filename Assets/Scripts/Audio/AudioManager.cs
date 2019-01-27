@@ -67,63 +67,66 @@ public class AudioManager : MonoBehaviour
 
     public void SoundsEventTrigger(SoundEvents soundEvents)
     {
-        switch (soundEvents)
+        if (!backGroudSource.isPlaying || !voicesSource.isPlaying)
         {
-            case SoundEvents.StartingGame:
-                StartingGame();
-                break;
-            case SoundEvents.NPCTalking:
-                break;
-            case SoundEvents.NPCTalkingToEmily:
-                NPCTalkingToEmily();
-                break;
-            case SoundEvents.PickingUpItem:
-                PickingUpItem();
-                break;
-            case SoundEvents.HidesInBathroom:
-                HidesInBathroom();
-                break;
-            case SoundEvents.PathBlocked:
-                PathBlocked();
-                break;
-            case SoundEvents.AnxietyLax:
-                AnxietyLax();
-                break;
-            case SoundEvents.NPCStandingBetween:
-                NPCStandingBetween();
-                break;
-            case SoundEvents.FireAlarm:
-                FireAlarm();
-                break;
-            case SoundEvents.Success:
-                Success();
-                break;
-            case SoundEvents.PassesOut:
-                PassesOut();
-                break;
-            case SoundEvents.ArgumentBreaksOut:
-                ArgumentBreaksOut();
-                break;
-            case SoundEvents.CardDeclined:
-                CardDeclined();
-                break;
-            case SoundEvents.HighAnxiety:
-                HighAnxiety();
-                break;
-            case SoundEvents.CheckingOut:
-                CheckingOut();
-                break;
-            case SoundEvents.SeeingEx:
-                SeeingEx();
-                break;
-            case SoundEvents.ShelfFalls:
-                ShelfFalls();
-                break;
-            case SoundEvents.PhoneMusic:
-                PhoneMusic();
-                break;
-            case SoundEvents.BackGroundMusic:
-                break;
+            switch (soundEvents)
+            {
+                case SoundEvents.StartingGame:
+                    StartingGame();
+                    break;
+                case SoundEvents.NPCTalking:
+                    break;
+                case SoundEvents.NPCTalkingToEmily:
+                    NPCTalkingToEmily();
+                    break;
+                case SoundEvents.PickingUpItem:
+                    PickingUpItem();
+                    break;
+                case SoundEvents.HidesInBathroom:
+                    HidesInBathroom();
+                    break;
+                case SoundEvents.PathBlocked:
+                    PathBlocked();
+                    break;
+                case SoundEvents.AnxietyLax:
+                    AnxietyLax();
+                    break;
+                case SoundEvents.NPCStandingBetween:
+                    NPCStandingBetween();
+                    break;
+                case SoundEvents.FireAlarm:
+                    FireAlarm();
+                    break;
+                case SoundEvents.Success:
+                    Success();
+                    break;
+                case SoundEvents.PassesOut:
+                    PassesOut();
+                    break;
+                case SoundEvents.ArgumentBreaksOut:
+                    ArgumentBreaksOut();
+                    break;
+                case SoundEvents.CardDeclined:
+                    CardDeclined();
+                    break;
+                case SoundEvents.HighAnxiety:
+                    HighAnxiety();
+                    break;
+                case SoundEvents.CheckingOut:
+                    CheckingOut();
+                    break;
+                case SoundEvents.SeeingEx:
+                    SeeingEx();
+                    break;
+                case SoundEvents.ShelfFalls:
+                    ShelfFalls();
+                    break;
+                case SoundEvents.PhoneMusic:
+                    PhoneMusic();
+                    break;
+                case SoundEvents.BackGroundMusic:
+                    break;
+            }
         }
     }
 
