@@ -22,7 +22,7 @@ public enum SoundEvents
     SeeingEx,
     ShelfFalls,
     PhoneMusic,
-    BackGroundMusic
+    BackGroundMusic,
 }
 [System.Serializable]
 public struct Clips
@@ -51,6 +51,7 @@ public class AudioManager : MonoBehaviour
     public List<Clips> seeingExClips = new List<Clips>();
     public List<Clips> shelfFallsClips = new List<Clips>();
     public List<Clips> phoneMusicClips = new List<Clips>();
+    public List<Clips> backGroundClips = new List<Clips>();
 
     public AudioSource backGroudSource;
     public AudioSource voicesSource;
