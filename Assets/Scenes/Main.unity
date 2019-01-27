@@ -869,7 +869,7 @@ PrefabInstance:
         type: 3}
       propertyPath: overlayPanel
       value: 
-      objectReference: {fileID: 8481848693306007992}
+      objectReference: {fileID: 6437445084565152051}
     - target: {fileID: 3638980408288214578, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1090,16 +1090,6 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1472514155169459150, guid: 8f4f23bbde775463491dc588de695808,
-        type: 3}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1472514155169459150, guid: 8f4f23bbde775463491dc588de695808,
-        type: 3}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f4f23bbde775463491dc588de695808, type: 3}
 --- !u!1 &4969801145557838561 stripped
@@ -1120,9 +1110,15 @@ MonoBehaviour:
   m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &8481848693306007992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8481848693306007992, guid: 8f4f23bbde775463491dc588de695808,
+--- !u!114 &6437445084565152051 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6437445084565152051, guid: 8f4f23bbde775463491dc588de695808,
     type: 3}
   m_PrefabInstance: {fileID: 4969801145557838560}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

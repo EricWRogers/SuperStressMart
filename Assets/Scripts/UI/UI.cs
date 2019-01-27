@@ -40,7 +40,7 @@ public class UI : MonoBehaviour
     public GameObject gameOverPanel;
     public GameObject winPanel;
 
-    public GameObject overlayPanel;
+    public Image overlayPanel;
 
 
     void Start()
