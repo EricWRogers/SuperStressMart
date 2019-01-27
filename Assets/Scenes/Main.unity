@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18029168, g: 0.22572422, b: 0.30693048, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -575,11 +575,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5366587958006292759, guid: 8f392629600034665b64bf0203019c04,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f392629600034665b64bf0203019c04, type: 3}
 --- !u!1 &887311898726999609 stripped
@@ -831,6 +826,11 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1831025831}
+    - target: {fileID: 8729897332139510623, guid: 8f4f23bbde775463491dc588de695808,
+        type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8729897331173149802, guid: 8f4f23bbde775463491dc588de695808,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -911,6 +911,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6007395555154523628, guid: c999c8970f845469894e66db02ed09f9,
+        type: 3}
+      propertyPath: m_Name
+      value: UIManager
+      objectReference: {fileID: 0}
     - target: {fileID: 6007395555154523603, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
       propertyPath: GameManager
@@ -986,11 +991,6 @@ PrefabInstance:
       propertyPath: overlayPanel
       value: 
       objectReference: {fileID: 6437445084565152051}
-    - target: {fileID: 6007395555154523628, guid: c999c8970f845469894e66db02ed09f9,
-        type: 3}
-      propertyPath: m_Name
-      value: UIManager
-      objectReference: {fileID: 0}
     - target: {fileID: 6007395555154523602, guid: c999c8970f845469894e66db02ed09f9,
         type: 3}
       propertyPath: m_LocalPosition.x
