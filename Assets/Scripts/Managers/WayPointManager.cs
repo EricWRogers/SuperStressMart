@@ -5,17 +5,10 @@ using UnityEngine;
 public class WayPointManager : MonoBehaviour
 {
     public string RoomName = "";
-    public bool left;
-    public float turn;
+    public bool available = true;
 
     void Start()
     {
-        if(left)
-        {
-            turn = 90.0f;
-        }else
-        {
-            turn = -90.0f;
-        }
+
     }
 }

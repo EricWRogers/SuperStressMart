@@ -11,7 +11,9 @@ public class EmployeeController : MonoBehaviour
     float targetTime;
     bool end = false;
     bool wait = false;
-    GameObject point;
+    public GameObject[] points;
+
+    public string WorkArea;
     Animator anim;
     UnityEngine.AI.NavMeshAgent agent;
 
@@ -21,11 +23,10 @@ public class EmployeeController : MonoBehaviour
         anim = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
-        //point = GameManager.RoomGOS.
+        GetPoints();
 
-        //MaxNumberOfIdems = Random.Range(1,4);
-        //targetTime = Random.Range(3,5);
-        //GameManager.EmployeeAI++;
+        MaxNumberOfIdems = Random.Range(1,4);
+        targetTime = Random.Range(3,5);
     }
 
     void FixedUpdate()
@@ -36,6 +37,11 @@ public class EmployeeController : MonoBehaviour
     void TraversePoints()
     {
 
+    }
+
+    void GetPoints()
+    {
+        
     }
 
     void OnDrawGizmosSelected()

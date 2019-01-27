@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
     public float spawnTime = 3f;
     public float maxCoustomerAI = 10f;
     public float coustomerAI= 0f;
-    public float maxEmployeeAI = 10f;
-    public float EmployeeAI= 0f;
+    
     // Start is called before the first frame update
     void Awake()
     {

@@ -8,10 +8,11 @@ public class CustomerController : MonoBehaviour
     public float lookRadius = 3f;
     public float numberOfIdems = 0.0f;
     public float MaxNumberOfIdems;
-    float targetTime;
+    public float targetTime;
     GameManager GameManager;
     bool end = false;
-    private bool wait = false;
+    public bool wait = false;
+    public bool gotPoint = false;
     GameObject point;
     Animator anim;
 
@@ -34,32 +35,49 @@ public class CustomerController : MonoBehaviour
 
     void FixedUpdate()
     {
+
         if(numberOfIdems < MaxNumberOfIdems)
         {
-            agent.SetDestination(point.transform.position);
-
-            float distance = Vector3.Distance(point.transform.position, transform.position);
-
-            if(distance <= lookRadius)
+            if(point.GetComponent<WayPointManager>().available)
             {
-                anim.SetBool("Walking", false);
+                gotPoint = true;
+            } 
+            if(point.GetComponent<WayPointManager>().available == false && gotPoint == false)
+            {
+                point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
+            }
 
-                transform.rotation = point.transform.rotation;
-   
-                anim.SetBool("Swipe", true);
-                waitTimer();
+            if(gotPoint)
+            {
+                point.GetComponent<WayPointManager>().available = false;
+                agent.SetDestination(point.transform.position);
 
-                if(wait)
+                float distance = Vector3.Distance(point.transform.position, transform.position);
+
+                if(distance <= lookRadius)
                 {
-                    anim.SetBool("Swipe", false);
-                    anim.SetBool("Walking", true);
+                    anim.SetBool("Walking", false);
 
-                    if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Swipe"))
-                    {
-                        point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
-                        numberOfIdems++;
-                        wait = false;
+                    transform.rotation = point.transform.rotation;
                     
+                    anim.SetBool("Swipe", true);
+
+                    waitTimer();
+
+                    if(wait)
+                    {
+                        anim.SetBool("Swipe", false);
+                        anim.SetBool("Walking", true);
+
+                        if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("Swipe"))
+                        {
+                            point.GetComponent<WayPointManager>().available = true;
+                            point = GameManager.RoomGOS[Random.Range(0, GameManager.RoomGOS.Length)];
+                            numberOfIdems++;
+                            wait = false;
+                            gotPoint = false;
+                        
+                        }
                     }
                 }
             }
@@ -75,7 +93,20 @@ public class CustomerController : MonoBehaviour
 
            if (distance <= lookRadius)
            {
-               end = true;
+                anim.SetBool("Walking", false);
+                transform.rotation = point.transform.rotation;
+                anim.SetBool("Swipe", true);
+
+               waitTimer();
+
+               if(wait)
+               {
+                   anim.SetBool("Swipe", false);
+                   anim.SetBool("Walking", true);
+                   wait = false;
+                   end = true;
+                   point.GetComponent<WayPointManager>().available = true;   
+               }
            }
        }
 
@@ -99,8 +130,10 @@ public class CustomerController : MonoBehaviour
         {
             WayPointManager RoomManager = waypoint.GetComponent<WayPointManager>();
 
-            if (RoomManager.RoomName == "Checkout 1")
-            {   
+            if ((RoomManager.RoomName == "Checkout 1" && RoomManager.available) || (RoomManager.RoomName == "Checkout 2" && RoomManager.available) || 
+                (RoomManager.RoomName == "Checkout 3" && RoomManager.available) || (RoomManager.RoomName == "Checkout 4" && RoomManager.available))
+            {
+               point.GetComponent<WayPointManager>().available = false;    
                point = waypoint;
             }
         }
@@ -125,7 +158,7 @@ public class CustomerController : MonoBehaviour
         
         if (targetTime <= 0.0f)
         {
-            targetTime = Random.Range(2,3);
+            targetTime = Random.Range(2,4);
             wait = true;
         }
     }
