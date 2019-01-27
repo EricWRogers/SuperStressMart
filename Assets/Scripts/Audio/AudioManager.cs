@@ -20,24 +20,24 @@ public enum SoundEvents
     HighAnxiety,
     CheckingOut,
     SeeingEx,
-    ShelfFalls
+    ShelfFalls,
+    PhoneMusic,
+    BackGroundMusic,
+}
+[System.Serializable]
+public struct Clips
+{
+    public SoundEvents sounds;
+    public AudioClip audio;
+    public bool hasPlayed;
 }
 
-public class AudioManager : MonoBehaviour
-{
-    //private SoundEvents soundEvents = new SoundEvents();
-   // [SerializeField]
-    //private AudioSource voiceSource;
+public class AudioManager : MonoBehaviour {
 
-    void Start()
-    {
+    public List<Clips> clips= new List<Clips>();
 
-    }
+    //public AudioClip backGroundMusic;
 
-    void Update()
-    {
-
-    }
     public void SoundsEventTrigger(SoundEvents soundEvents)
     {
         switch (soundEvents)
