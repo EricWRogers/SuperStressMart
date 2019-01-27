@@ -7,7 +7,7 @@ public class EmployeeController : MonoBehaviour
     public float lookRadius = 3f;
     private float rayLength = 3f;
 
-    public string workArea;
+    public string workArea = "";
     public float serchLeangth;
     public float audioLeangth;
     public float numberOfIdems = 0.0f;
@@ -32,6 +32,7 @@ public class EmployeeController : MonoBehaviour
     {
         GameManager = (GameManager)FindObjectOfType(typeof(GameManager));
         AudioManager = GameManager.GetComponent<AudioManager>();
+        GameObject dfkasjdf = GameManager.RoomGOS[index];
         anim = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         Player = GameObject.FindGameObjectWithTag("Player");
@@ -142,6 +143,7 @@ public class EmployeeController : MonoBehaviour
         bool nextpoint = true;
         if(GameManager.RoomGOS.Length > 0 || workArea != "")
         {
+            Debug.Log(GameManager.RoomGOS[index].GetComponent<WayPointManager>().RoomName);
             while(nextpoint)
             {
                 index++;

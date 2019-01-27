@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,7 +38,7 @@ public class GameManager : MonoBehaviour
     {
         if(coustomerAI == maxCoustomerAI)
         {
-            maxCoustomerAI = Random.Range(10,14);
+            maxCoustomerAI = UnityEngine.Random.Range(10,14);
             spawn = false;
             
         } else if(coustomerAI < maxCoustomerAI && spawn)
@@ -55,7 +56,7 @@ public class GameManager : MonoBehaviour
         
             if (spawnTime <= 0.0f)
             {
-                spawnTime = Random.Range(3,5);
+                spawnTime = UnityEngine.Random.Range(3,5);
                 spawn = true;
             }
         }
@@ -67,7 +68,7 @@ public class GameManager : MonoBehaviour
             fireTimeLeft -= Time.deltaTime;
             if(fireTimeLeft <= 0.0f)
             {
-                fireTimeLeft = Random.Range(90.0f,120.0f);
+                fireTimeLeft = UnityEngine.Random.Range(90.0f,120.0f);
             }
         }
     }
